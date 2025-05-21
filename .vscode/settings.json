@@ -1,0 +1,16 @@
+{
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.includeLanguages": {
+    "svelte": "html",
+    "javascript": "javascript",
+    "typescript": "typescript"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "svelte.enable-ts-plugin": true,
+  "svelte.plugin.svelte.defaultScriptLanguage": "js",
+  "svelte.plugin.svelte.defaultStyleLanguage": "css",
+  "svelte.plugin.svelte.format.enable": true,
+  "svelte.plugin.svelte.diagnostics.enable": true
+} 
