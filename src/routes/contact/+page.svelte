@@ -39,7 +39,7 @@
 	}
 </script>
 
-<form onsubmit={handleSubmit} class="mx-auto max-w-2xl space-y-6">
+<form onsubmit={handleSubmit} class="mx-auto max-w-2xl space-y-6 min-h-[80vh]">
     <div class="space-y-4">
         <div>
             <label for="name" class="block text-sm font-medium text-white">Name</label>
