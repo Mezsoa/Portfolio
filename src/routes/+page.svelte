@@ -1,29 +1,39 @@
 <script>
-	// You can add your personal information here
+	import LineDivider from '$lib/components/LineDivider.svelte';
+
+	// personlig information om mig.
 	const name = 'John Gunnarsson';
 	const title = 'Freelance Developer';
 	const description = 'I create beautiful and functional web applications';
 </script>
 
-<section class="flex min-h-screen flex-col items-center justify-center space-y-4 px-4 text-center sm:space-y-6">
-	<img
-		src="/images/IMG_5151-removebg-preview.png"
-		alt="Portrait"
-		class="mb-2 h-32 w-32 rounded-full border-4 border-white/30 bg-white/10 object-cover shadow-xl sm:mb-4 sm:h-40 sm:w-40"
-	/>
-	<div class="space-y-3 text-white sm:space-y-4">
-		<h1 class="text-3xl font-bold sm:text-4xl lg:text-5xl">{name}</h1>
-		<h2 class="text-lg text-gray-200 sm:text-xl lg:text-2xl">{title}</h2>
-		<p class="mx-auto max-w-2xl text-base text-gray-200 sm:text-lg lg:text-xl">{description}</p>
-		<div class="mt-6 sm:mt-8">
-			<a
-				href="/contact"
-				class="rounded-lg bg-[#1b6f65] px-4 py-2 text-sm text-white transition-colors hover:bg-[#720000] sm:px-6 sm:py-3 sm:text-base"
-			>
-				Get in Touch
-			</a>
+<section class="flex flex-col items-center justify-start min-h-screen space-y-4 px-4 text-center sm:space-y-6">
+	<div class="hero bg-transparent">
+		<div class="hero-content flex-col lg:flex-row gap-16">
+		  <img
+			src="/images/IMG_5151-removebg-preview.png"
+			class="max-w-sm rounded-lg shadow-2xl"
+			alt="John Gunnarsson"
+		  />
+		  <div>
+			<h1 class="text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent drop-shadow-2xl font-poppins tracking-tight leading-tight mb-4">
+				{name}
+			</h1>
+			<p class="py-6">
+				Hey, I'm John. I build fullstack web apps that just work — no fuss, no fluff.
+				<br />
+				I care about clean code, smart solutions, and making your ideas come to life.
+				<br />
+				<br />
+				If you want someone who's easy to work with and gets the job done, you're in the right place.
+			</p>
+			<p class="text-sm mt-4 font-poppins mb-16">"Powered by Freyk — Nordic precision, global impact"</p>
+			<a href="/projects" class="btn btn-neutral-content mr-16">Check out my work →</a>
+			<a href="/contact" class="btn btn-neutral-content">Let's talk →</a>
+		  </div>
 		</div>
-	</div>
+	  </div>
+	<LineDivider />
 </section>
 
 <section class="py-24 bg-base-100">
@@ -42,10 +52,7 @@
 				<div class="p-8">
 					<h3 class="mb-2 text-2xl font-bold text-base-content drop-shadow">SnrgyStudios.com</h3>
 					<p class="mb-4 text-base-content/80">
-						During my internship at SNRGY Studios, I contributed to their website development. SNRGY
-						Studios is a dynamic team of engineers, designers, and entrepreneurs dedicated to creating
-						innovative luminous experiences. Their mission is to illuminate lives through purposeful
-						design and cutting-edge technology.
+						Built the company’s website from scratch, collaborating closely with designers Donnie Mastromonaco and Hannes Lövbacka.
 					</p>
 					<a
 						href="https://snrgystudios.com"
@@ -70,9 +77,7 @@
 				<div class="p-8">
 					<h3 class="mb-2 text-2xl font-bold text-base-content drop-shadow">Soldr.pro</h3>
 					<p class="mb-4 text-base-content/80">
-						During my internship at SNRGY Studios, I contributed to their website development. Soldr.pro
-						is a mobile easy to use open source soldering kit with all the tools that you would need for
-						the job.	
+						Supported maintenance and development of the landing page before and during the Kickstarter launch. Initiated the e-commerce site before handing off to the main developer.	
 					</p>
 					<a
 						href="https://soldr.pro"

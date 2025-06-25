@@ -31,8 +31,8 @@
 {/if}
 
 <nav class="relative z-10 bg-transparent px-4 py-6 text-white">
-	<div class="container mx-auto flex items-center justify-between">
-		<a href="/" class="font-poppins text-2xl font-bold tracking-tight">John</a>
+	<div class="container mx-28 flex items-center justify-between">
+		<a href="/" class="font-poppins text-2xl font-bold tracking-tight">Freyk</a>
 		
 		<!-- Desktop Navigation -->
 		<div class="hidden md:flex items-center space-x-8">
@@ -67,6 +67,7 @@
 			</div>
 		</div>
 	</div>
+	<p class="text-sm text-gray-300 font-normal mt-4 ml-28">Code with calm power</p>
 </nav>
 
 <div class="absolute z-11 bottom-16 w-34 right-2 top-4 flex flex-row justify-center items-start">

@@ -1,9 +1,14 @@
 <script lang="ts">
 	import emailjs from '@emailjs/browser';
-    let { form } = $props();
+	import { onMount } from 'svelte';
     let showAdditionalFields = $state(false);
 	let isSubmitting = $state(false);
 	let submitStatus = $state<'idle' | 'success' | 'error'>('idle');
+
+	onMount(() => {
+		// Initialize EmailJS with your public key
+		emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your actual public key
+	});
 
 	async function handleSubmit(event: Event) {
 		event.preventDefault();
@@ -11,22 +16,23 @@
 		submitStatus = 'idle';
 
 		const formData = new FormData(event.target as HTMLFormElement);
-		const data = {
-			name: formData.get('name'),
-			email: formData.get('email'),
+		const templateParams = {
+			from_name: formData.get('name'),
+			from_email: formData.get('email'),
 			message: formData.get('message'),
-			phone: formData.get('phone') || '',
-			company: formData.get('company') || '',
-			website: formData.get('website') || ''
+			phone: formData.get('phone') || 'Not provided',
+			company: formData.get('company') || 'Not provided',
+			website: formData.get('website') || 'Not provided'
 		};
 
 		try {
-			await emailjs.send(
-				'YOUR_SERVICE_ID', // This is where the service ID goes 
-				'YOUR_TEMPLATE_ID',// This is where the template ID goes
-				data,
-				'YOUR_PUBLIC_KEY' // This is where the public key goes
+			const response = await emailjs.send(
+				'YOUR_SERVICE_ID',    // Replace with your EmailJS service ID
+				'YOUR_TEMPLATE_ID',   // Replace with your EmailJS template ID
+				templateParams
 			);
+			
+			console.log('Email sent successfully:', response);
 			submitStatus = 'success';
 			(event.target as HTMLFormElement).reset();
 			showAdditionalFields = false;
@@ -133,8 +139,17 @@
 
     <button
         type="submit"
-        class="w-full rounded-lg bg-[#1b6f65] px-6 py-3 text-white transition-colors hover:bg-[#720000]"
+        disabled={isSubmitting}
+        class="w-full rounded-lg bg-[#1b6f65] px-6 py-3 text-white transition-colors hover:bg-[#155a52] disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
     >
-        Send Message
+        {#if isSubmitting}
+            <svg class="animate-spin h-5 w-5" viewBox="0 0 24 24" fill="none">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            Sending...
+        {:else}
+            Send Message
+        {/if}
     </button>
 </form>
