@@ -1,13 +1,18 @@
 <script lang="ts">
 	import emailjs from '@emailjs/browser';
 	import { onMount } from 'svelte';
+
+
+
     let showAdditionalFields = $state(false);
 	let isSubmitting = $state(false);
 	let submitStatus = $state<'idle' | 'success' | 'error'>('idle');
 
+
+    
 	onMount(() => {
 		// Initialize EmailJS with your public key
-		emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your actual public key
+		emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 	});
 
 	async function handleSubmit(event: Event) {
@@ -27,8 +32,8 @@
 
 		try {
 			const response = await emailjs.send(
-				'YOUR_SERVICE_ID',    // Replace with your EmailJS service ID
-				'YOUR_TEMPLATE_ID',   // Replace with your EmailJS template ID
+				import.meta.env.VITE_EMAILJS_SERVICE_ID,
+				import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
 				templateParams
 			);
 			

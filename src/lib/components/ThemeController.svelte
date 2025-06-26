@@ -1,4 +1,4 @@
-<div class="dropdown mb-12 w-32 ">
+<div class="dropdown mb-12 w-32">
 	<div tabindex="0" role="button" class="btn m-1 flex justify-center items-center bg-transparent border-none">
 		Theme
 		<svg
