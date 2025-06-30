@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { fade } from 'svelte/transition';
 	import LineDividerCarousel from '$lib/components/LineDividerCarousel.svelte';
 	let projects = [
@@ -15,9 +15,9 @@
 
 <main>
 <section
-	class="mx-auto flex h-[150vh] min-h-screen w-full flex-col items-center justify-center gap-42"
+	class="mx-auto flex h-[100vh] min-h-screen w-full flex-col items-center justify-center gap-42"
 >
-	<div class="carousel h-full w-full bg-black/50">
+	<div class="carousel h-full w-full bg-black/50 ">
 		<div
 			id="slide1"
 			class="carousel-item relative flex w-full flex-row items-center justify-center"
@@ -38,7 +38,7 @@
 
 				<div class="flex flex-col items-center justify-center">
 					<div class="flex max-w-2xl flex-col items-start justify-start text-left">
-						<div class="stack stack-start size-[700px]">
+						<div class="stack stack-start size-[750px]">
 							<div
 								class="border-base-content card border border-white/30 bg-gradient-to-br from-white/20 via-black/20 to-white/20 text-center shadow-2xl backdrop-blur-lg"
 							>

@@ -66,7 +66,7 @@
 			</div>
 		</div>
 	</div>
-	<p class="text-sm text-gray-300 font-normal mt-4 ml-28">Powered by Freyk — Nordic precision, global impact.</p>
+	<p class="text-sm text-gray-300 font-normal mt-4 ml-28">Powered by Freyk — <br> Nordic precision, global impact.</p>
 </nav>
 
 <div class="absolute z-11 bottom-16 w-34 right-2 top-4 flex flex-row justify-center items-start h-48">

@@ -44,7 +44,7 @@
 					<img
 						src="https://image.thum.io/get/https://snrgystudios.com"
 						alt="SnrgyStudios.com homepage"
-						class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
+						class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-100"
 					/>
 					<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
 					<span class="absolute top-4 left-4 rounded-full bg-primary/80 px-3 py-1 text-xs font-semibold text-primary-content shadow-lg">Web Project</span>
@@ -69,7 +69,7 @@
 					<img
 						src="https://image.thum.io/get/https://soldr.pro"
 						alt="Soldr.pro homepage"
-						class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
+						class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-100"
 					/>
 					<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
 					<span class="absolute top-4 left-4 rounded-full bg-primary/80 px-3 py-1 text-xs font-semibold text-primary-content shadow-lg">Web Project</span>
@@ -85,7 +85,7 @@
 						rel="noopener noreferrer"
 						class="inline-block rounded-lg bg-primary px-5 py-2 text-primary-content font-semibold shadow-md transition-colors hover:bg-primary-focus hover:scale-105"
 					>
-						Visit Website →
+					Visit Website →
 					</a>
 				</div>
 			</div>
