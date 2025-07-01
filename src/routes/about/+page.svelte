@@ -5,7 +5,7 @@
 	let skillTree = [
 		{
 			name: 'John Gunnarsson',
-			level: 'expert',
+			level: 'advanced',
 			tooltip: 'Full Stack Developer & Outdoor Enthusiast',
 			x: 50, // Center position (%)
 			y: 15,
@@ -13,31 +13,31 @@
 			children: [
 				{
 					name: 'Frontend',
-					level: 'expert',
+					level: 'intermediate',
 					tooltip: 'User Interface & Experience Development',
 					x: 15,
 					y: 35,
 					unlocked: true,
 					children: [
-						{ name: 'HTML', level: 'expert', tooltip: 'Semantic markup and accessibility', x: 8, y: 55, unlocked: true },
-						{ name: 'CSS', level: 'expert', tooltip: 'Modern styling and animations', x: 12, y: 65, unlocked: true },
-						{ name: 'JavaScript', level: 'expert', tooltip: 'Interactive functionality and ES6+', x: 18, y: 60, unlocked: true },
-						{ name: 'Svelte', level: 'expert', tooltip: 'Reactive UI framework', x: 22, y: 50, unlocked: true },
-						{ name: 'React', level: 'advanced', tooltip: 'Component-based architecture', x: 15, y: 75, unlocked: true },
-						{ name: 'Tailwind', level: 'expert', tooltip: 'Utility-first CSS framework', x: 25, y: 70, unlocked: true }
+						{ name: 'HTML', level: 'intermediate', tooltip: 'Semantic markup and accessibility', x: 8, y: 55, unlocked: true },
+						{ name: 'CSS', level: 'intermediate', tooltip: 'Modern styling and animations', x: 12, y: 65, unlocked: true },
+						{ name: 'JavaScript', level: 'intermediate', tooltip: 'Interactive functionality and ES6+', x: 18, y: 60, unlocked: true },
+						{ name: 'Svelte', level: 'intermediate', tooltip: 'Reactive UI framework', x: 22, y: 50, unlocked: true },
+						{ name: 'React', level: 'intermediate', tooltip: 'Component-based architecture', x: 15, y: 75, unlocked: true },
+						{ name: 'Tailwind', level: 'intermediate', tooltip: 'Utility-first CSS framework', x: 25, y: 70, unlocked: true }
 					]
 				},
 				{
 					name: 'Backend',
-					level: 'advanced',
+					level: 'intermediate',
 					tooltip: 'Server-side Architecture & APIs',
 					x: 85,
 					y: 35,
 					unlocked: true,
 					children: [
-						{ name: 'Node.js', level: 'advanced', tooltip: 'JavaScript runtime environment', x: 78, y: 55, unlocked: true },
-						{ name: 'Express', level: 'advanced', tooltip: 'Fast web framework', x: 88, y: 60, unlocked: true },
-						{ name: 'APIs', level: 'advanced', tooltip: 'RESTful and GraphQL services', x: 92, y: 50, unlocked: true },
+						{ name: 'Node.js', level: 'intermediate', tooltip: 'JavaScript runtime environment', x: 78, y: 55, unlocked: true },
+						{ name: 'Express', level: 'intermediate', tooltip: 'Fast web framework', x: 88, y: 60, unlocked: true },
+						{ name: 'APIs', level: 'intermediate', tooltip: 'RESTful and GraphQL services', x: 92, y: 50, unlocked: true },
 						{ name: 'MongoDB', level: 'intermediate', tooltip: 'Document-based NoSQL database', x: 82, y: 70, unlocked: true },
 						{ name: 'PostgreSQL', level: 'intermediate', tooltip: 'Relational database management', x: 75, y: 65, unlocked: true },
 						{ name: 'Supabase', level: 'intermediate', tooltip: 'Open-source Firebase alternative', x: 85, y: 75, unlocked: true }
@@ -45,38 +45,38 @@
 				},
 				{
 					name: 'DevOps',
-					level: 'intermediate',
+					level: 'implemented in projects',
 					tooltip: 'Deployment & Cloud Infrastructure',
 					x: 50,
 					y: 50,
 					unlocked: true,
 					children: [
-						{ name: 'Docker', level: 'intermediate', tooltip: 'Containerization platform', x: 45, y: 70, unlocked: true },
-						{ name: 'AWS', level: 'intermediate', tooltip: 'Cloud computing services', x: 55, y: 75, unlocked: true },
+						{ name: 'Docker', level: 'implemented in projects', tooltip: 'Containerization platform', x: 36, y: 70, unlocked: true },
+						{ name: 'AWS', level: 'implemented in projects', tooltip: 'Cloud computing services', x: 55, y: 75, unlocked: true },
 						{ name: 'Vercel', level: 'advanced', tooltip: 'Frontend deployment platform', x: 50, y: 85, unlocked: true },
-						{ name: 'Git', level: 'expert', tooltip: 'Version control system', x: 40, y: 80, unlocked: true },
-						{ name: 'CI/CD', level: 'intermediate', tooltip: 'Automated deployment pipelines', x: 60, y: 80, unlocked: true }
+						{ name: 'Git', level: 'advanced', tooltip: 'Version control system', x: 40, y: 80, unlocked: true },
+						{ name: 'CI/CD', level: 'implemented in projects', tooltip: 'Automated deployment pipelines', x: 60, y: 80, unlocked: true }
 					]
 				},
 				{
 					name: 'Design',
 					level: 'advanced',
 					tooltip: 'UI/UX & Visual Design',
-					x: 25,
-					y: 25,
+					x: 1,
+					y: 21,
 					unlocked: true,
 					children: [
-						{ name: 'Figma', level: 'advanced', tooltip: 'Collaborative design tool', x: 18, y: 40, unlocked: true },
-						{ name: 'UI/UX', level: 'advanced', tooltip: 'User-centered design principles', x: 32, y: 35, unlocked: true },
-						{ name: 'Responsive', level: 'expert', tooltip: 'Mobile-first design approach', x: 28, y: 20, unlocked: true },
-						{ name: 'Prototyping', level: 'advanced', tooltip: 'Interactive design mockups', x: 35, y: 45, unlocked: true }
+						{ name: 'Figma', level: 'advanced', tooltip: 'Collaborative design tool', x: -20, y: 40, unlocked: true },
+						{ name: 'UI/UX', level: 'advanced', tooltip: 'User-centered design principles', x: 2, y: 35, unlocked: true },
+						{ name: 'Responsive', level: 'intermediate', tooltip: 'Mobile-first design approach', x: 28, y: 20, unlocked: true },
+						{ name: 'Prototyping', level: 'advanced', tooltip: 'Interactive design mockups', x: -10, y: 45, unlocked: true }
 					]
 				},
 				{
 					name: 'Tools',
 					level: 'expert',
 					tooltip: 'Development Workflow & Productivity',
-					x: 75,
+					x: 105,
 					y: 25,
 					unlocked: true,
 					children: [
@@ -135,11 +135,14 @@
 	}
 
 	/**
-	 * @param {'beginner' | 'intermediate' | 'advanced' | 'expert'} level
+	 * @param {'beginner' | 'looking into it' | 'learning'  | 'implemented in projects' | 'intermediate' | 'advanced' | 'expert'} level
 	 */
 	function getLevelColor(level) {
 		switch (level) {
 			case 'beginner': return '#fbbf24'; // yellow-400
+			case 'looking into it': return '#f97316'; // orange-500
+			case 'learning': return '#f59e3b'; // amber-400
+			case 'implemented in projects': return '#dc2626'; // red-600
 			case 'intermediate': return '#3b82f6'; // blue-500
 			case 'advanced': return '#8b5cf6'; // purple-500
 			case 'expert': return '#10b981'; // green-500
@@ -148,15 +151,18 @@
 	}
 
 	/**
-	 * @param {'beginner' | 'intermediate' | 'advanced' | 'expert'} level
+	 * @param {'beginner' | 'looking into it' | 'learning'  | 'implemented in projects' | 'intermediate' | 'advanced' | 'expert'} level
 	 */
 	function getNodeSize(level) {
 		switch (level) {
-			case 'beginner': return 2.5;
-			case 'intermediate': return 3.5;
-			case 'advanced': return 4.5;
-			case 'expert': return 5.5;
-			default: return 2.5;
+			case 'beginner': return 1.5;
+			case 'looking into it': return 1.8;
+			case 'learning': return 2.2;
+			case 'implemented in projects': return 2.5;
+			case 'intermediate': return 3.2;
+			case 'advanced': return 3.8;
+			case 'expert': return 4.5;
+			default: return 1.5;
 		}
 	}
 
@@ -252,19 +258,31 @@
 		<h2 class="mb-6 text-3xl font-bold">Skills & Expertise Tree</h2>
 		<div class="mb-4 flex flex-wrap gap-2 text-sm">
 			<div class="flex items-center gap-2">
-				<div class="h-3 w-3 rounded-full bg-yellow-400"></div>
+				<div class="h-3 w-3 rounded-full" style="background-color: #fbbf24"></div>
 				<span>Beginner</span>
 			</div>
 			<div class="flex items-center gap-2">
-				<div class="h-3 w-3 rounded-full bg-blue-500"></div>
+				<div class="h-3 w-3 rounded-full" style="background-color: #f97316"></div>
+				<span>Looking into it</span>
+			</div>
+			<div class="flex items-center gap-2">
+				<div class="h-3 w-3 rounded-full" style="background-color: #f59e3b"></div>
+				<span>Learning</span>
+			</div>
+			<div class="flex items-center gap-2">
+				<div class="h-3 w-3 rounded-full" style="background-color: #dc2626"></div>
+				<span>Implemented in projects</span>
+			</div>
+			<div class="flex items-center gap-2">
+				<div class="h-3 w-3 rounded-full" style="background-color: #3b82f6"></div>
 				<span>Intermediate</span>
 			</div>
 			<div class="flex items-center gap-2">
-				<div class="h-3 w-3 rounded-full bg-purple-500"></div>
+				<div class="h-3 w-3 rounded-full" style="background-color: #8b5cf6"></div>
 				<span>Advanced</span>
 			</div>
 			<div class="flex items-center gap-2">
-				<div class="h-3 w-3 rounded-full bg-green-500"></div>
+				<div class="h-3 w-3 rounded-full" style="background-color: #10b981"></div>
 				<span>Expert</span>
 			</div>
 		</div>
