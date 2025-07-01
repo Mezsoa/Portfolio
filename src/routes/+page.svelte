@@ -3,8 +3,8 @@
 
 	// personlig information om mig.
 	const name = 'John Gunnarsson';
-	const title = 'Freelance Developer';
-	const description = 'I create beautiful and functional web applications';
+
+	
 </script>
 
 <section class="flex flex-col items-center justify-start min-h-screen space-y-4 px-2 sm:px-4 text-center sm:space-y-6">
@@ -12,7 +12,7 @@
 		<div class="hero-content flex-col lg:flex-row gap-8 lg:gap-16">
 		  <img
 			src="/images/IMG_5151-removebg-preview.png"
-			class="w-48 sm:w-64 lg:max-w-sm rounded-lg shadow-2xl"
+			class="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full shadow-2xl border-2 border-white/20 object-cover  object-bottom"
 			alt="John Gunnarsson"
 		  />
 		  <div class="max-w-md lg:max-w-none">
@@ -27,7 +27,7 @@
 				<br class="hidden sm:block" />
 				If you want someone who's easy to work with and gets the job done, you're in the right place.
 			</p>
-			<p class="text-xs sm:text-sm mt-2 sm:mt-4 font-poppins mb-8 sm:mb-16 px-2">"Powered by Freyk — Nordic precision, global impact"</p>
+			<p class="text-xs sm:text-sm mt-2 sm:mt-4 font-poppins mb-8 sm:mb-16 px-2">"Powered by Freyk &mdash; Nordic precision, global impact"</p>
 			<div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center">
 				<a href="/projects" class="btn btn-neutral-content w-full sm:w-auto">Check out my work →</a>
 				<a href="/contact" class="btn btn-neutral-content w-full sm:w-auto">Let's talk →</a>

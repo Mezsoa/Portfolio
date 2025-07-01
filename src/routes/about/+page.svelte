@@ -197,14 +197,12 @@
 	);
 </script>
 
-<div class="mx-auto max-w-5xl px-4">
+<div class="mx-auto max-w-7xl px-4">
 	<!-- Hero Section -->
 	<div class="mb-16 flex h-full w-full flex-col items-start gap-12 py-8 md:flex-row">
-		<div class="w-full md:w-1/2">
-			<PhotoDeck />
-		</div>
+		
 		<div class="flex-1">
-			<div class="mb-6 flex-1 rounded-2xl bg-white/10 p-6 backdrop-blur-md">
+			<div class="mb-6 flex-1 rounded-2xl bg-white/2 p-6 backdrop-blur-lg">
 				<h2 class="mb-6 text-4xl font-bold">So, who am I?</h2>
 				<p class="text-lg leading-relaxed">
 					Hey! I'm a 29-year-old developer who's passionate about both technology and the great
@@ -214,7 +212,7 @@
 					web applications.
 				</p>
 			</div>
-			<div class="flex-1 rounded-2xl bg-white/10 p-6 backdrop-blur-md">
+			<div class="flex-1 rounded-2xl bg-white/2 p-6 backdrop-blur-lg	">
 				<p class="text-lg leading-relaxed">
 					I love the intersection of creativity and logic that comes with development. It's not just
 					about writing code—it's about solving puzzles, creating solutions, and helping businesses
@@ -222,6 +220,9 @@
 					real difference in todays world.
 				</p>
 			</div>
+		</div>
+		<div class="w-full md:w-1/2">
+			<PhotoDeck />
 		</div>
 	</div>
 
@@ -240,9 +241,14 @@
 			</p>
 		</div>
 	</section>
+</div>
 
-	<!-- Skills Tree Section -->
-	<section class="mb-16">
+<!-- Skills Tree Section -->
+<section class="mb-16 max-w-10xl">
+	
+	<!-- Skill Tree Visualization -->
+	<div class="relative w-full overflow-hidden  bg-gradient-to-br from-base-200/30 via-base-300/20 to-base-200/40 p-8 backdrop-blur-md border border-base-300/30" style="height: 1100px;">
+
 		<h2 class="mb-6 text-3xl font-bold">Skills & Expertise Tree</h2>
 		<div class="mb-4 flex flex-wrap gap-2 text-sm">
 			<div class="flex items-center gap-2">
@@ -263,110 +269,107 @@
 			</div>
 		</div>
 		
-		<!-- Skill Tree Visualization -->
-		<div class="relative w-full overflow-hidden rounded-2xl bg-gradient-to-br from-base-200/30 via-base-300/20 to-base-200/40 p-8 backdrop-blur-md border border-base-300/30" style="height: 700px;">
-			<svg class="absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-				<!-- Background Grid Pattern -->
-				<defs>
-					<pattern id="grid" width="5" height="5" patternUnits="userSpaceOnUse">
-						<path d="M 5 0 L 0 0 0 5" fill="none" stroke="rgba(156, 163, 175, 0.1)" stroke-width="0.1"/>
-					</pattern>
-				</defs>
-				<rect width="100" height="100" fill="url(#grid)" />
+		<svg class="absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+			<!-- Background Grid Pattern -->
+			<!-- <defs>
+				<pattern id="grid" width="5" height="5" patternUnits="userSpaceOnUse">
+					<path d="M 5 0 L 0 0 0 5" fill="none" stroke="rgba(156, 163, 175, 0.1)" stroke-width="0.1"/>
+				</pattern>
+			</defs>
+			<rect width="100" height="100" fill="url(#grid)" /> -->
 
-				<!-- Connection Lines -->
-				{#each connections as { parent, child }}
-					<path
-						d={getConnectionPath(parent, child)}
-						stroke="rgba(156, 163, 175, 0.6)"
-						stroke-width="0.2"
-						fill="none"
-						class="transition-all duration-300"
-						stroke-dasharray="0.5,0.5"
-						opacity="0.7"
-					/>
-				{/each}
+			<!-- Connection Lines -->
+			{#each connections as { parent, child }}
+				<path
+					d={getConnectionPath(parent, child)}
+					stroke="rgba(156, 163, 175, 0.6)"
+					stroke-width="0.2"
+					fill="none"
+					class="transition-all duration-300"
+					stroke-dasharray="0.5,0.5"
+					opacity="0.7"
+				/>
+			{/each}
 
-				<!-- Skill Nodes -->
-				{#each allNodes as node}
-					<g
-						class="cursor-pointer transition-all duration-300 hover:scale-101"
-						on:click={() => selectNode(node)}
-						on:mouseenter={() => handleMouseEnter(node)}
-						on:mouseleave={() => handleMouseLeave(node)}
-						on:touchstart={() => selectNode(node)}
-						on:touchend={() => handleMouseLeave(node)}
-					>
-						<!-- Node Background Glow (for selected/hovered) -->
-						{#if selectedNode === node || hoveredNode === node}
-							<circle
-								cx={node.x}
-								cy={node.y}
-								r={getNodeSize(node.level) / 2 + 0.8}
-								fill={getLevelColor(node.level)}
-								opacity="0.4"
-								class="animate-pulse"
-							/>
-						{/if}
-
-						<!-- Main Node Circle -->
+			<!-- Skill Nodes -->
+			{#each allNodes as node}
+				<g
+					class="cursor-pointer transition-all duration-300 hover:scale-101"
+					on:click={() => selectNode(node)}
+					on:mouseenter={() => handleMouseEnter(node)}
+					on:mouseleave={() => handleMouseLeave(node)}
+					on:touchstart={() => selectNode(node)}
+					on:touchend={() => handleMouseLeave(node)}
+				>
+					<!-- Node Background Glow (for selected/hovered) -->
+					{#if selectedNode === node || hoveredNode === node}
 						<circle
 							cx={node.x}
 							cy={node.y}
-							r={getNodeSize(node.level) / 2}
+							r={getNodeSize(node.level) / 2 + 0.8}
 							fill={getLevelColor(node.level)}
-							stroke="rgba(255, 255, 255, 0.9)"
-							stroke-width="0.15"
-							class="drop-shadow-lg"
-							filter="drop-shadow(0 0 0.5px rgba(0,0,0,0.3))"
+							opacity="0.4"
+							class="animate-pulse"
 						/>
+					{/if}
 
-						<!-- Node Label -->
-						<text
-							x={node.x}
-							y={node.y + getNodeSize(node.level) / 2 + 1.8}
-							text-anchor="middle"
-							class="fill-current font-semibold"
-							style="font-size: {node.name === 'John Gunnarsson' ? '0.9px' : '0.65px'}; filter: drop-shadow(0 0 0.2px rgba(0,0,0,0.8));"
-						>
-							{node.name}
-						</text>
-					</g>
-				{/each}
-			</svg>
+					<!-- Main Node Circle -->
+					<circle
+						cx={node.x}
+						cy={node.y}
+						r={getNodeSize(node.level) / 2}
+						fill={getLevelColor(node.level)}
+						stroke="rgba(255, 255, 255, 0.9)"
+						stroke-width="0.15"
+						class="drop-shadow-lg"
+						filter="drop-shadow(0 0 0.5px rgba(0,0,0,0.3))"
+					/>
 
-			<!-- Tooltip/Info Panel -->
-			{#if showInfoPanel}
-				{@const activeNode = hoveredNode || selectedNode}
-				<div class="absolute bottom-1 left-6 right-6 w-[40%] rounded-xl bg-base-100/95 p-5 backdrop-blur-md shadow-2xl border border-base-300/50 transition-all duration-300">
-					<div class="flex items-start gap-4">
-						<div
-							class="h-5 w-5 rounded-full flex-shrink-0 mt-0.5 shadow-lg"
-							style="background-color: {getLevelColor(activeNode.level)}"
-						></div>
-						<div class="flex-1">
-							<h3 class="text-xl font-bold text-base-content">{activeNode.name}</h3>
-							<p class="text-sm text-base-content/80 mt-1 leading-relaxed">{activeNode.tooltip}</p>
-							<div class="mt-3 flex items-center gap-2">
-								<span class="rounded-full bg-primary/20 px-3 py-1 text-xs font-semibold text-primary">
-									{activeNode.level.charAt(0).toUpperCase() + activeNode.level.slice(1)} Level
+					<!-- Node Label -->
+					<text
+						x={node.x}
+						y={node.y + getNodeSize(node.level) / 2 + 1.8}
+						text-anchor="middle"
+						class="fill-current font-semibold"
+						style="font-size: {node.name === 'John Gunnarsson' ? '0.9px' : '0.65px'}; filter: drop-shadow(0 0 0.2px rgba(0,0,0,0.8));"
+					>
+						{node.name}
+					</text>
+				</g>
+			{/each}
+		</svg>
+
+		<!-- Tooltip/Info Panel -->
+		{#if showInfoPanel}
+			{@const activeNode = hoveredNode || selectedNode}
+			<div class="absolute bottom-1 left-6 right-6 w-[40%] rounded-xl bg-base-100/95 p-5 backdrop-blur-md shadow-2xl border border-base-300/50 transition-all duration-300">
+				<div class="flex items-start gap-4">
+					<div
+						class="h-5 w-5 rounded-full flex-shrink-0 mt-0.5 shadow-lg"
+						style="background-color: {getLevelColor(activeNode.level)}"
+					></div>
+					<div class="flex-1">
+						<h3 class="text-xl font-bold text-base-content">{activeNode.name}</h3>
+						<p class="text-sm text-base-content/80 mt-1 leading-relaxed">{activeNode.tooltip}</p>
+						<div class="mt-3 flex items-center gap-2">
+							<span class="rounded-full bg-primary/20 px-3 py-1 text-xs font-semibold text-primary">
+								{activeNode.level.charAt(0).toUpperCase() + activeNode.level.slice(1)} Level
+							</span>
+							{#if activeNode.children}
+								<span class="rounded-full bg-secondary/20 px-3 py-1 text-xs font-semibold text-secondary">
+									{activeNode.children.length} Skills
 								</span>
-								{#if activeNode.children}
-									<span class="rounded-full bg-secondary/20 px-3 py-1 text-xs font-semibold text-secondary">
-										{activeNode.children.length} Skills
-									</span>
-								{/if}
-							</div>
+							{/if}
 						</div>
 					</div>
 				</div>
-			{/if}
-		</div>
+			</div>
+		{/if}
+	</div>
 
-		<!-- Interactive Instructions -->
-		<div class="mt-6 text-center">
-			<p class="text-sm text-base-content/70 mb-2">🎮 <strong>Interactive Skill Tree</strong> - Explore my expertise</p>
-			<p class="text-xs text-base-content/50">Desktop: Hover to preview • Mobile: Tap to select • Click again to close • Each color represents skill level</p>
-		</div>
-	</section>
-</div>
+	<!-- Interactive Instructions -->
+	<div class="mt-6 text-center">
+		<p class="text-sm text-base-content/70 mb-2">🎮 <strong>Interactive Skill Tree</strong> - Explore my expertise</p>
+		<p class="text-xs text-base-content/50">Desktop: Hover to preview • Mobile: Tap to select • Click again to close • Each color represents skill level</p>
+	</div>
+</section>

@@ -1,4 +1,4 @@
-<div class="dropdown mb-12 w-32">
+<div class="dropdown dropdown-end w-32">
 	<div tabindex="0" role="button" class="btn m-1 flex justify-center items-center bg-transparent border-none">
 		Theme
 		<svg
@@ -11,7 +11,7 @@
 			<path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
 		</svg>
 	</div>
-	<ul class="dropdown-content bg-base-300 rounded-box z-1 w-32 p-2 shadow-2xl w-full flex flex-col">
+	<ul class="dropdown-content bg-base-300 rounded-box z-100 w-32 p-2 shadow-2xl w-full flex flex-col">
 		<li>
 			<input
 				type="radio"

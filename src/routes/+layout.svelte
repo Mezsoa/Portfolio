@@ -29,8 +29,8 @@
 	<VideoBackground videoSrc={currentVideo} />
 {/if}
 
-<nav class="relative z-10 bg-transparent px-2 sm:px-4 py-4 sm:py-6">
-	<div class="container mx-auto max-w-7xl flex items-center justify-between">
+<nav class="relative bg-transparent px-2 sm:px-4 py-4 sm:py-6 overflow-visible">
+	<div class="container mx-auto max-w-7xl flex items-center justify-between overflow-visible">
 		<a href="/" class="font-poppins text-xl sm:text-2xl font-bold tracking-tight">Freyk</a>
 		
 		<!-- Desktop Navigation -->

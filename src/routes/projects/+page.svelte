@@ -25,14 +25,14 @@
 			<div class="flex flex-row items-center justify-between gap-42">
 				<div class="mockup-phone">
 					<div class="mockup-phone-camera bg-white/10 shadow-2xl"></div>
-					<div class="mockup-phone-display grid place-content-center text-white">
-						<div class="flex flex-col items-center justify-center">
-							<img
-								src={currentProject.image}
-								alt={currentProject.name}
-								class="h-full w-full object-cover"
-							/>
-						</div>
+					<div class="mockup-phone-display p-0 m-0">
+						<iframe
+							src="https://snrgystudios.com"
+							title="SnrgyStudios Live Mobile Preview"
+							class="h-full w-full border-0 bg-white rounded-lg"
+							loading="lazy"
+							scrolling="yes"
+						></iframe>
 					</div>
 				</div>
 
@@ -107,16 +107,14 @@
 			<div class="flex flex-row items-center justify-between gap-42">
 				<div class="mockup-phone">
 					<div class="mockup-phone-camera bg-white/10 shadow-2xl"></div>
-					<div class="mockup-phone-display grid place-content-center text-white">
-						<div class="flex flex-col items-center justify-center">
-							<video
-								src="/videos/soldr-phone-video.webm"
-								class="h-full w-full object-cover"
-								autoplay
-								muted
-								loop
-							></video>
-						</div>
+					<div class="mockup-phone-display p-0 m-0">
+						<iframe
+							src="https://soldr.pro"
+							title="Soldr.pro Live Mobile Preview"
+							class="h-full w-full border-0 bg-white rounded-lg"
+							loading="lazy"
+							scrolling="yes"
+						></iframe>
 					</div>
 				</div>
 
