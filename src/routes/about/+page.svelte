@@ -94,12 +94,44 @@
 	let selectedNode = null;
 	/** @type {any} */
 	let hoveredNode = null;
+	/** @type {boolean} */
+	let showInfoPanel = false;
 
 	/**
 	 * @param {any} node
 	 */
 	function selectNode(node) {
-		selectedNode = selectedNode === node ? null : node;
+		if (selectedNode === node) {
+			// If clicking the same node, toggle the info panel
+			selectedNode = null;
+			showInfoPanel = false;
+		} else {
+			// Select new node and show info panel
+			selectedNode = node;
+			showInfoPanel = true;
+		}
+	}
+
+	/**
+	 * @param {any} node
+	 */
+	function handleMouseEnter(node) {
+		hoveredNode = node;
+		// On desktop, show info panel on hover
+		if (window.innerWidth >= 768) {
+			showInfoPanel = true;
+		}
+	}
+
+	/**
+	 * @param {any} node
+	 */
+	function handleMouseLeave(node) {
+		hoveredNode = null;
+		// On desktop, hide info panel when not hovering (unless node is selected)
+		if (window.innerWidth >= 768 && !selectedNode) {
+			showInfoPanel = false;
+		}
 	}
 
 	/**
@@ -260,8 +292,10 @@
 					<g
 						class="cursor-pointer transition-all duration-300 hover:scale-101"
 						on:click={() => selectNode(node)}
-						on:mouseenter={() => hoveredNode = node}
-						on:mouseleave={() => hoveredNode = null}
+						on:mouseenter={() => handleMouseEnter(node)}
+						on:mouseleave={() => handleMouseLeave(node)}
+						on:touchstart={() => selectNode(node)}
+						on:touchend={() => handleMouseLeave(node)}
 					>
 						<!-- Node Background Glow (for selected/hovered) -->
 						{#if selectedNode === node || hoveredNode === node}
@@ -302,9 +336,9 @@
 			</svg>
 
 			<!-- Tooltip/Info Panel -->
-			{#if hoveredNode || selectedNode}
+			{#if showInfoPanel}
 				{@const activeNode = hoveredNode || selectedNode}
-				<div class="absolute bottom-1 left-6 right-6 w-1/2 rounded-xl bg-base-100/95 p-5 backdrop-blur-md shadow-2xl border border-base-300/50 transition-all duration-300">
+				<div class="absolute bottom-1 left-6 right-6 w-[40%] rounded-xl bg-base-100/95 p-5 backdrop-blur-md shadow-2xl border border-base-300/50 transition-all duration-300">
 					<div class="flex items-start gap-4">
 						<div
 							class="h-5 w-5 rounded-full flex-shrink-0 mt-0.5 shadow-lg"
@@ -331,8 +365,8 @@
 
 		<!-- Interactive Instructions -->
 		<div class="mt-6 text-center">
-			<p class="text-sm text-base-content/70 mb-2">🎮 <strong>Interactive Skill Tree</strong> - Hover over nodes to explore my expertise</p>
-			<p class="text-xs text-base-content/50">Click nodes to select • Each color represents skill level • Lines show relationships</p>
+			<p class="text-sm text-base-content/70 mb-2">🎮 <strong>Interactive Skill Tree</strong> - Explore my expertise</p>
+			<p class="text-xs text-base-content/50">Desktop: Hover to preview • Mobile: Tap to select • Click again to close • Each color represents skill level</p>
 		</div>
 	</section>
 </div>
