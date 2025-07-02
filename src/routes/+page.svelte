@@ -11,7 +11,7 @@
 	<div class="hero bg-transparent">
 		<div class="hero-content flex-col lg:flex-row gap-8 lg:gap-16">
 		  <img
-			src="/images/IMG_5151-removebg-preview.png"
+			src="/images/sideprofile.webp"
 			class="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full shadow-2xl border-2 border-white/20 object-cover  object-bottom"
 			alt="John Gunnarsson"
 		  />

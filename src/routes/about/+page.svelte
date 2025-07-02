@@ -5,7 +5,7 @@
 	let skillTree = [
 		{
 			name: 'John Gunnarsson',
-			level: 'advanced',
+			level: 'intermediate',
 			tooltip: 'Full Stack Developer & Outdoor Enthusiast',
 			x: 50, // Center position (%)
 			y: 15,
