@@ -3,9 +3,49 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Chakra+Petch:wght@300;400;500;600&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Chakra+Petch:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<!--Start of Tawk.to Script-->
+		<script type="text/javascript">
+			var Tawk_API = Tawk_API || {},
+				Tawk_LoadStart = new Date();
+			(function () {
+				var s1 = document.createElement('script'),
+					s0 = document.getElementsByTagName('script')[0];
+				s1.async = true;
+				s1.src = 'https://embed.tawk.to/686c358d643c8f190db17a4a/1ivjb2c6b';
+				s1.charset = 'UTF-8';
+				s1.setAttribute('crossorigin', '*');
+				s0.parentNode.insertBefore(s1, s0);
+			})();
+		</script>
+		<!--End of Tawk.to Script-->
+
+		<!-- Tawk.to Visitor Identification -->
+		<script type="text/javascript">
+			Tawk_API.onLoad = function () {
+				// Set visitor information
+				Tawk_API.setAttributes(
+					{
+						name: 'Portfolio Visitor',
+						email: 'visitor@portfolio.com',
+						role: 'Potential Client',
+						company: 'Portfolio Website',
+						website: window.location.href
+					},
+					function (error) {}
+				);
+
+				// Track page views
+				Tawk_API.onStatusChange = function (status) {
+					console.log('Tawk status:', status);
+				};
+			};
+		</script>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
