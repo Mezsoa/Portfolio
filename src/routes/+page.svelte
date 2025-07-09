@@ -4,7 +4,7 @@
 	// personlig information om mig.
 	const name = 'John Gunnarsson';
 
-	
+
 </script>
 
 <section class="flex flex-col items-center justify-start min-h-screen space-y-4 px-2 sm:px-4 text-center sm:space-y-6">
@@ -40,7 +40,7 @@
 
 <section class="py-12 sm:py-16 lg:py-24 bg-base-100">
 	<div class="container mx-auto px-2 sm:px-4">
-		<div class="grid grid-cols-1 gap-8 sm:gap-12 md:grid-cols-2 lg:grid-cols-3">
+		<div class="grid grid-cols-1 gap-8 sm:gap-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
 			<div class="group relative overflow-hidden rounded-2xl transition-transform duration-300 hover:scale-105">
 				<div class="relative">
 					<img
@@ -104,7 +104,7 @@
 				<div class="p-4 sm:p-6 lg:p-8">
 					<h3 class="mb-2 text-xl sm:text-2xl font-bold text-base-content drop-shadow">Crewmate.se</h3>
 					<p class="mb-4 text-sm sm:text-base text-base-content/80 leading-relaxed">
-						Built a modern web application for crew management and scheduling. Features include user authentication, real-time updates, and responsive design for mobile and desktop use.
+						Built a modern web application for a company that provides crew management and scheduling specifically for the expo & event industry. Features include user authentication, real-time updates, real-time chat, fully functional booking system, and responsive design for mobile and desktop use.
 					</p>
 					<a
 						href="https://crewmate.se"
@@ -187,13 +187,6 @@
 <!-- Certificate & Reviews Section -->
 <section class="py-12 sm:py-16 lg:py-24 bg-transparent">
 	<div class="container mx-auto px-2 sm:px-4">
-		<div class="text-center mb-12">
-			<h2 class="text-3xl sm:text-4xl font-bold mb-4">Certifications & Reviews</h2>
-			<p class="text-lg text-base-content/80 max-w-2xl mx-auto">
-				Continuous learning and client satisfaction are key to staying ahead in tech.
-			</p>
-		</div>
-		
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
 			<!-- Certificate Section -->
 			<div class="group relative">
@@ -221,39 +214,59 @@
 						</a>
 					</div>
 				</div>
-				
-				<!-- Certificate Info -->
-				<div class="mt-6 text-center">
-					<h3 class="text-xl font-semibold mb-2">Certificate of Completion</h3>
-					<p class="text-base-content/70 mb-4">
-						John Gunnarsson has successfully completed the course requirements and demonstrated proficiency in the subject matter.
-					</p>
-					<div class="flex flex-wrap justify-center gap-4 text-sm text-base-content/60">
-						<span class="flex items-center gap-1">
-							<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-							</svg>
-							Verified Certificate
-						</span>
-						<span class="flex items-center gap-1">
-							<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
-							</svg>
-							Completion Date
-						</span>
+				<div class="text-center mb-12">
+					<!-- Certificate Info -->
+					<div class="mt-6 text-center">
+						<h3 class="text-xl font-semibold mb-2">Certificate of Completion</h3>
+						<div class="flex flex-wrap justify-center gap-4 text-sm text-base-content/60">
+							<span class="flex items-center gap-1">
+								<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+								</svg>
+								Verified Certificate
+							</span>
+							<span class="flex items-center gap-1">
+								<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+								</svg>
+								Completion Date
+							</span>
+						</div>
+						<p class="text-base-content/70 mb-1">
+							John Gunnarsson has successfully completed the course requirements and demonstrated proficiency in the subject matter.
+						</p>
+						
 					</div>
+					
 				</div>
+				
 			</div>
+			
 			
 			<!-- Reviews Carousel -->
 			<div class="flex flex-col justify-center items-center h-full min-h-[500px]">
+				<p class="text-[10px] text-base-content/80 max-w-[120px] mx-auto relative bottom-40 left-120 font-poppins">
+					Continuous learning and client satisfaction are key to staying ahead in tech.
+				</p>
 				<h3 class="text-xl font-bold mb-4 text-center tracking-tight">Client Reviews</h3>
-				<div class="carousel carousel-vertical w-full max-w-sm h-[700px]">
+				<p class="text-[10px] text-white/80 mb-4 ">Scroll up & down</p>
+				
+				<div class="relative w-full max-w-sm ">
+					<!-- Scroll indicator -->
+					<div class="absolute -right-8 top-[250px] transform -translate-y-1/2 z-10 flex flex-col items-center gap-1">
+						<div class="w-2 h-2 bg-base-content/40 rounded-full animate-pulse"></div>
+						<div class="w-2 h-2 bg-base-content/60 rounded-full animate-pulse" style="animation-delay: 0.2s;"></div>
+						<div class="w-2 h-2 bg-base-content/80 rounded-full animate-pulse" style="animation-delay: 0.4s;"></div>
+						<div class="w-2 h-2 bg-base-content/40 rounded-full animate-pulse" style="animation-delay: 0.6s;"></div>
+						<div class="w-2 h-2 bg-base-content/60 rounded-full animate-pulse" style="animation-delay: 0.8s;"></div>
+					</div>
+					
+					<div class="carousel carousel-vertical w-full h-[500px] mb-46 rounded-[100%] border-t-2 border-b-2 border-base-content/20">
 					<div class="carousel-item h-full flex flex-col justify-center items-center">
-						<div class="w-full bg-transparent border-none rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
+						<div class="w-full bg-transparent rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
 							<div class="avatar mb-2">
-								<div class="w-14 h-14 rounded-full border border-base-300 flex items-center justify-center bg-base-100">
-									<span class="text-xl font-bold text-primary">DM</span>
+								<div class="w-14 h-14 rounded-full flex items-center justify-center">
+									<img src="/Collabs/Donnie.webp" alt="Donnie Mastromonaco" class="w-full h-full object-cover rounded-full">
 								</div>
 							</div>
 							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"John is incredibly reliable and delivers exactly what you need. His attention to detail and clean code made our collaboration seamless."</blockquote>
@@ -272,10 +285,10 @@
 					</div>
 					
 					<div class="carousel-item h-full flex flex-col justify-center items-center">
-						<div class="w-full bg-transparent border border-base-200 rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
+						<div class="w-full bg-transparent rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
 							<div class="avatar mb-2">
-								<div class="w-14 h-14 rounded-full border border-base-300 flex items-center justify-center bg-base-100">
-									<span class="text-xl font-bold text-secondary">HL</span>
+								<div class="w-14 h-14 rounded-full flex items-center justify-center">
+									<img src="/Collabs/Hannes.webp" alt="Hannes Lövbacka" class="w-full h-full object-cover rounded-full">
 								</div>
 							</div>
 							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"Working with John was a pleasure. He understands design intent and translates it perfectly into functional code."</blockquote>
@@ -294,10 +307,10 @@
 					</div>
 					
 					<div class="carousel-item h-full flex flex-col justify-center items-center">
-						<div class="w-full bg-transparent border border-base-200 rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
+						<div class="w-full bg-transparent rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
 							<div class="avatar mb-2">
-								<div class="w-14 h-14 rounded-full border border-base-300 flex items-center justify-center bg-base-100">
-									<span class="text-xl font-bold text-accent">NM</span>
+								<div class="w-14 h-14 rounded-full flex items-center justify-center">
+									<img src="/Collabs/Noora.webp" alt="Noora Team" class="w-full h-full object-cover rounded-full">
 								</div>
 							</div>
 							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"John's A/B testing implementation helped us optimize our conversion rates significantly. His data-driven approach was invaluable."</blockquote>
@@ -316,10 +329,10 @@
 					</div>
 					
 					<div class="carousel-item h-full flex flex-col justify-center items-center">
-						<div class="w-full bg-transparent border border-base-200 rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
+						<div class="w-full bg-transparent rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
 							<div class="avatar mb-2">
-								<div class="w-14 h-14 rounded-full border border-base-300 flex items-center justify-center bg-base-100">
-									<span class="text-xl font-bold text-primary">CS</span>
+								<div class="w-16 h-16 rounded-full flex items-center justify-center">
+									<img src="/Collabs/crewmate1.webp" alt="Crewmate.se Client" class="w-full h-full object-cover rounded-full">
 								</div>
 							</div>
 							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"The crew management system John built for us has streamlined our entire operation. It's intuitive and reliable."</blockquote>
@@ -338,10 +351,10 @@
 					</div>
 					
 					<div class="carousel-item h-full flex flex-col justify-center items-center">
-						<div class="w-full bg-transparent border border-base-200 rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
+						<div class="w-full bg-transparent rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
 							<div class="avatar mb-2">
-								<div class="w-14 h-14 rounded-full border border-base-300 flex items-center justify-center bg-base-100">
-									<span class="text-xl font-bold text-secondary">GM</span>
+								<div class="w-14 h-14 rounded-full flex items-center justify-center">
+									<img src="/Collabs/Glorb.webp" alt="Glorb.me Owner" class="w-full h-full object-cover rounded-full">
 								</div>
 							</div>
 							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"John's maintenance and improvements to our e-commerce platform have been excellent. He's responsive and always delivers quality work."</blockquote>
@@ -360,6 +373,8 @@
 					</div>
 				</div>
 			</div>
+			
 		</div>
+		
 	</div>
 </section>

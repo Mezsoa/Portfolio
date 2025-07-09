@@ -66,10 +66,10 @@
 					y: 21,
 					unlocked: true,
 					children: [
-						{ name: 'Figma', level: 'advanced', tooltip: 'Collaborative design tool', x: -20, y: 40, unlocked: true },
-						{ name: 'UI/UX', level: 'advanced', tooltip: 'User-centered design principles', x: 2, y: 35, unlocked: true },
-						{ name: 'Responsive', level: 'intermediate', tooltip: 'Mobile-first design approach', x: 28, y: 20, unlocked: true },
-						{ name: 'Prototyping', level: 'advanced', tooltip: 'Interactive design mockups', x: -10, y: 45, unlocked: true }
+						{ name: 'Figma', level: 'advanced', tooltip: 'Collaborative design tool', x: -20, y: 25, unlocked: true },
+						{ name: 'UI/UX', level: 'advanced', tooltip: 'User-centered design principles', x: -5, y: 40, unlocked: true },
+						{ name: 'Responsive', level: 'intermediate', tooltip: 'Mobile-first design approach', x: 8, y: 25, unlocked: true },
+						{ name: 'Prototyping', level: 'advanced', tooltip: 'Interactive design mockups', x: -20, y: 35, unlocked: true }
 					]
 				},
 				{
@@ -80,10 +80,10 @@
 					y: 25,
 					unlocked: true,
 					children: [
-						{ name: 'GitHub', level: 'expert', tooltip: 'Code collaboration platform', x: 82, y: 40, unlocked: true },
-						{ name: 'Vite', level: 'advanced', tooltip: 'Fast build tool', x: 72, y: 45, unlocked: true },
-						{ name: 'VS Code', level: 'expert', tooltip: 'Code editor and extensions', x: 68, y: 35, unlocked: true },
-						{ name: 'Terminal', level: 'advanced', tooltip: 'Command line proficiency', x: 78, y: 20, unlocked: true }
+						{ name: 'GitHub', level: 'expert', tooltip: 'Code collaboration platform', x: 108, y: 50, unlocked: true },
+						{ name: 'Vite', level: 'advanced', tooltip: 'Fast build tool', x: 118, y: 45, unlocked: true },
+						{ name: 'VS Code', level: 'expert', tooltip: 'Code editor and extensions', x: 95, y: 35, unlocked: true },
+						{ name: 'Terminal', level: 'advanced', tooltip: 'Command line proficiency', x: 130, y: 42, unlocked: true }
 					]
 				}
 			]
@@ -132,6 +132,49 @@
 		if (window.innerWidth >= 768 && !selectedNode) {
 			showInfoPanel = false;
 		}
+	}
+
+	/**
+	 * @param {string} skillName
+	 */
+	function getSkillIcon(skillName) {
+		// @ts-ignore
+		const iconMap = {
+			'HTML': '/carousel/icons8-html-240.png',
+			'CSS': '/carousel/icons8-css-240.png',
+			'JavaScript': '/carousel/icons8-javascript-240.png',
+			'Svelte': '/carousel/icons8-svelte-240.png',
+			'React': '/carousel/icons8-react-200.png',
+			'Tailwind': '/carousel/icons8-tailwind-css-240.png',
+			'Node.js': '/carousel/icons8-node-js-240.png',
+			'MongoDB': '/carousel/icons8-mongodb-240.png',
+			'PostgreSQL': '/carousel/icons8-postgresql-240.png',
+			'Supabase': '/carousel/icons8-supabase-240.png',
+			'Git': '/carousel/icons8-git-240.png',
+			'GitHub': '/carousel/icons8-github-250.png',
+			'Figma': '/carousel/icons8-figma-240.png',
+			'Java': '/carousel/icons8-java-240.png',
+			'Spring Boot': '/carousel/icons8-spring-boot-240.png',
+			'Vue.js': '/carousel/icons8-vue-js-256.png',
+			'Shopify': '/carousel/icons8-shopify-240.png',
+			'UI/UX': '/carousel/fullCircle.png',
+			'Responsive': '/carousel/responsive.png',
+			'Prototyping': '/carousel/prototyping.webp',
+			'Docker': '/carousel/Docker.webp',
+			'AWS': '/carousel/aws.webp',
+			'Vercel': '/carousel/vercel.webp',
+			'frontend': '/carousel/frontend.webp',
+			'backend': '/carousel/backend.webp',
+			'devops': '/carousel/devops.webp',
+			'design': '/carousel/design.webp',
+			'tools': '/carousel/tools.webp',
+			'CI/CD': '/carousel/ci-cd.webp',
+			'Vite': '/carousel/vite.webp',
+			'VS Code': '/carousel/vscode.webp',
+			'Terminal': '/carousel/terminal.webp'
+		};
+		
+		return iconMap[skillName] || null;
 	}
 
 	/**
@@ -331,17 +374,37 @@
 						/>
 					{/if}
 
-					<!-- Main Node Circle -->
-					<circle
-						cx={node.x}
-						cy={node.y}
-						r={getNodeSize(node.level) / 2}
-						fill={getLevelColor(node.level)}
-						stroke="rgba(255, 255, 255, 0.9)"
-						stroke-width="0.15"
-						class="drop-shadow-lg"
-						filter="drop-shadow(0 0 0.5px rgba(0,0,0,0.3))"
-					/>
+					<!-- Main Node Circle with Icon or Color -->
+					{#if getSkillIcon(node.name)}
+						<!-- Icon-based node -->
+						<defs>
+							<clipPath id="circle-{node.name.replace(/\s+/g, '-')}">
+								<circle cx={node.x} cy={node.y} r={getNodeSize(node.level) / 2} />
+							</clipPath>
+						</defs>
+						<image
+							href={getSkillIcon(node.name)}
+							x={node.x - getNodeSize(node.level) / 2}
+							y={node.y - getNodeSize(node.level) / 2}
+							width={getNodeSize(node.level)}
+							height={getNodeSize(node.level)}
+							clip-path="url(#circle-{node.name.replace(/\s+/g, '-')})"
+							class="drop-shadow-lg"
+							filter="drop-shadow(0 0 0.5px rgba(0,0,0,0.3))"
+						/>
+					{:else}
+						<!-- Color-based node for non-icon skills -->
+						<circle
+							cx={node.x}
+							cy={node.y}
+							r={getNodeSize(node.level) / 2}
+							fill={getLevelColor(node.level)}
+							stroke="rgba(255, 255, 255, 0.9)"
+							stroke-width="0.15"
+							class="drop-shadow-lg"
+							filter="drop-shadow(0 0 0.5px rgba(0,0,0,0.3))"
+						/>
+					{/if}
 
 					<!-- Node Label -->
 					<text
@@ -362,10 +425,18 @@
 			{@const activeNode = hoveredNode || selectedNode}
 			<div class="absolute bottom-1 left-6 right-6 w-[40%] rounded-xl bg-base-100/95 p-5 backdrop-blur-md shadow-2xl border border-base-300/50 transition-all duration-300">
 				<div class="flex items-start gap-4">
-					<div
-						class="h-5 w-5 rounded-full flex-shrink-0 mt-0.5 shadow-lg"
-						style="background-color: {getLevelColor(activeNode.level)}"
-					></div>
+					{#if getSkillIcon(activeNode.name)}
+						<img
+							src={getSkillIcon(activeNode.name)}
+							alt="{activeNode.name} icon"
+							class="h-8 w-8 flex-shrink-0 mt-0.5 shadow-lg rounded-lg"
+						/>
+					{:else}
+						<div
+							class="h-5 w-5 rounded-full flex-shrink-0 mt-0.5 shadow-lg"
+							style="background-color: {getLevelColor(activeNode.level)}"
+						></div>
+					{/if}
 					<div class="flex-1">
 						<h3 class="text-xl font-bold text-base-content">{activeNode.name}</h3>
 						<p class="text-sm text-base-content/80 mt-1 leading-relaxed">{activeNode.tooltip}</p>

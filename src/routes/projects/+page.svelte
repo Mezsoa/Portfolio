@@ -38,57 +38,48 @@
 
 				<div class="flex flex-col items-center justify-center">
 					<div class="flex max-w-2xl flex-col items-start justify-start text-left">
-						<div class="stack stack-start size-[750px]">
-							<div
-								class="border-base-content card border border-white/30 bg-gradient-to-br from-white/20 via-black/20 to-white/20 text-center shadow-2xl backdrop-blur-lg"
+						<div class="flex flex-col items-center justify-center text-center max-w-2xl">
+							<h1
+								class="mt-14 mb-4 bg-gradient-to-r from-white/80 to-black/80 bg-clip-text text-3xl font-bold"
 							>
-								<h1
-									class="mt-14 mb-4 bg-gradient-to-r from-white/80 to-black/80 bg-clip-text text-3xl font-bold"
-								>
-									SnrgyStudios.com
-								</h1>
+								SnrgyStudios.com
+							</h1>
 
-								<div class="mb-4 space-y-1 text-sm">
-									<p>The guy who turned dreams into pixels</p>
-									<p>SvelteKit, Tailwind CSS, GitHub, Figma</p>
-									<p>Donnie & Hannes crafted the vision, I brought it to life</p>
-								</div>
-								<div class="card-body">
-									<div class="mb-4">
-										<h2 class="mb-2 text-lg font-semibold">The Story:</h2>
-										<p class="text-sm leading-relaxed">
-											Picture this: a creative studio with wild ideas and stunning designs, but they
-											needed someone to make it all work on the web. That's where I came in –
-											turning their beautiful Figma mockups into a living, breathing website that
-											actually does what it's supposed to do.
-										</p>
-									</div>
-
-									<div class="mb-4">
-										<h2 class="mb-2 text-lg font-semibold">What went down:</h2>
-										<ul class="list-none space-y-1 text-xs">
-											<li>• Pixel-perfect code that would make designers weep tears of joy</li>
-											<li>• Built a lightning-fast SvelteKit site that just works</li>
-											<li>• Added smooth animations that make users go "ooh, nice"</li>
-											<li>• Daily design sync sessions (aka "is this shade of blue right?")</li>
-										</ul>
-									</div>
-
-									<div>
-										<h2 class="mb-3 text-xl font-semibold">Plot twist learnings:</h2>
-										<ul class="list-none space-y-1 text-sm">
-											<li>• Creative minds + technical execution = pure magic</li>
-											<li>• Sometimes "just make it pop" actually means something specific</li>
-											<li>• Good communication beats perfect code every single time</li>
-										</ul>
-									</div>
-								</div>
+							<div class="mb-4 space-y-1 text-sm">
+								<p>The guy who turned dreams into pixels</p>
+								<p>SvelteKit, Tailwind CSS, GitHub, Figma</p>
+								<p>Donnie & Hannes crafted the vision, I brought it to life</p>
 							</div>
-							<div class="border-base-content card bg-base-100 border text-center">
-								<div class="card-body">B</div>
-							</div>
-							<div class="border-base-content card bg-base-100 border text-center">
-								<div class="card-body">C</div>
+							
+							<div class="p-4 sm:p-6">
+								<div class="mb-4">
+									<h2 class="mb-2 text-lg font-semibold">The Story:</h2>
+									<p class="text-sm leading-relaxed">
+										Picture this: a creative studio with wild ideas and stunning designs, but they
+										needed someone to make it all work on the web. That's where I came in –
+										turning their beautiful Figma mockups into a living, breathing website that
+										actually does what it's supposed to do.
+									</p>
+								</div>
+
+								<div class="mb-4">
+									<h2 class="mb-2 text-lg font-semibold">What went down:</h2>
+									<ul class="list-none space-y-1 text-xs">
+										<li>• Pixel-perfect code that would make designers weep tears of joy</li>
+										<li>• Built a lightning-fast SvelteKit site that just works</li>
+										<li>• Added smooth animations that make users go "ooh, nice"</li>
+										<li>• Daily design sync sessions (aka "is this shade of blue right?")</li>
+									</ul>
+								</div>
+
+								<div>
+									<h2 class="mb-3 text-xl font-semibold">Plot twist learnings:</h2>
+									<ul class="list-none space-y-1 text-sm">
+										<li>• Creative minds + technical execution = pure magic</li>
+										<li>• Sometimes "just make it pop" actually means something specific</li>
+										<li>• Good communication beats perfect code every single time</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -120,60 +111,51 @@
 
 				<div class="flex flex-col items-center justify-center">
 					<div class="flex max-w-2xl flex-col items-start justify-start text-left">
-						<div class="stack stack-start size-[700px]">
-							<div
-								class="border-base-content card border border-white/30 bg-gradient-to-br from-white/20 via-black/20 to-white/20 text-center shadow-2xl backdrop-blur-lg"
+						<div class="flex flex-col items-center justify-center text-center max-w-2xl">
+							<h1
+								class="mt-14 mb-4 bg-gradient-to-r from-white/80 to-black/80 bg-clip-text text-3xl font-bold"
 							>
-								<h1
-									class="mt-14 mb-4 bg-gradient-to-r from-white/80 to-black/80 bg-clip-text text-3xl font-bold"
-								>
-									Soldr.pro
-								</h1>
+								Soldr.pro
+							</h1>
 
-								<div class="mb-4 space-y-1 text-sm">
-									<p>Launch Support & E‑commerce Foundations</p>
-									<p>HTML, CSS, GitHub, Shopify</p>
-									<p>At SNRGY Studios, innovation doesn't just glow — it solders</p>
-								</div>
-								<div class="card-body">
-									<div class="mb-4">
-										<h2 class="mb-2 text-lg font-semibold">The Mission:</h2>
-										<p class="text-sm leading-relaxed">
-											As part of the internal dev team, I supported the early stages of Soldr.pro, a
-											sleek, open-source soldering kit built for creators, tinkerers, and field
-											engineers. From pre-Kickstarter landing page improvements to kickstarting the
-											e-commerce foundation, I helped shape the digital launchpad for this portable
-											piece of hardware.
-										</p>
-									</div>
-
-									<div class="mb-4">
-										<h2 class="mb-2 text-lg font-semibold">What happened:</h2>
-										<ul class="list-none space-y-1 text-xs">
-											<li>
-												• Maintained and optimized the site during the live Kickstarter campaign
-											</li>
-											<li>• Laid down the first structural version of their e‑commerce site</li>
-											<li>• Worked side-by-side with the design team on improvements</li>
-											<li>• Handed off to their lead fullstack dev for the next phase</li>
-										</ul>
-									</div>
-
-									<div>
-										<h2 class="mb-3 text-xl font-semibold">Secret ingredients:</h2>
-										<ul class="list-none space-y-1 text-sm">
-											<li>• HTML, CSS, GitHub, Shopify</li>
-											<li>• Curiosity, less is more mindset and a lot of coffee</li>
-											<li>• Real-time campaign support under pressure</li>
-										</ul>
-									</div>
-								</div>
+							<div class="mb-4 space-y-1 text-sm">
+								<p>Launch Support & E‑commerce Foundations</p>
+								<p>HTML, CSS, GitHub, Shopify</p>
+								<p>At SNRGY Studios, innovation doesn't just glow — it solders</p>
 							</div>
-							<div class="border-base-content card bg-base-100 border text-center">
-								<div class="card-body">B</div>
-							</div>
-							<div class="border-base-content card bg-base-100 border text-center">
-								<div class="card-body">C</div>
+							
+							<div class="p-4 sm:p-6">
+								<div class="mb-4">
+									<h2 class="mb-2 text-lg font-semibold">The Mission:</h2>
+									<p class="text-sm leading-relaxed">
+										As part of the internal dev team, I supported the early stages of Soldr.pro, a
+										sleek, open-source soldering kit built for creators, tinkerers, and field
+										engineers. From pre-Kickstarter landing page improvements to kickstarting the
+										e-commerce foundation, I helped shape the digital launchpad for this portable
+										piece of hardware.
+									</p>
+								</div>
+
+								<div class="mb-4">
+									<h2 class="mb-2 text-lg font-semibold">What happened:</h2>
+									<ul class="list-none space-y-1 text-xs">
+										<li>
+											• Maintained and optimized the site during the live Kickstarter campaign
+										</li>
+										<li>• Laid down the first structural version of their e‑commerce site</li>
+										<li>• Worked side-by-side with the design team on improvements</li>
+										<li>• Handed off to their lead fullstack dev for the next phase</li>
+									</ul>
+								</div>
+
+								<div>
+									<h2 class="mb-3 text-xl font-semibold">Secret ingredients:</h2>
+									<ul class="list-none space-y-1 text-sm">
+										<li>• HTML, CSS, GitHub, Shopify</li>
+										<li>• Curiosity, less is more mindset and a lot of coffee</li>
+										<li>• Real-time campaign support under pressure</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>

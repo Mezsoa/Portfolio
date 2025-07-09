@@ -4,7 +4,7 @@
 
   <div class="flex flex-row w-full items-center justify-evenly h-[400px]">
     <div class="divider divider-horizontal divider-start h-[400px]">
-        <div class="carousel carousel-center bg-neutral rounded-box w-[410px] max-w-[850px] space-x-4 p-4 max-h-[250px] h-[250px]">
+        <div class="carousel carousel-center bg-neutral rounded-box w-[580px] max-w-[850px] space-x-4 p-4 max-h-[250px] h-[250px]">
             <div class="carousel-item">
               <img
                 src="/carousel/icons8-java-240.png"
@@ -67,7 +67,7 @@
     <div class="divider divider-horizontal h-[200px]"></div>
 
     <div class="divider divider-horizontal divider-end w-full h-full h-[400px]">
-        <div class="carousel carousel-center bg-neutral rounded-box w-[410px] max-w-[850px] space-x-4 p-4 max-h-[250px] h-[250px]">
+        <div class="carousel carousel-center bg-neutral rounded-box w-[580px] max-w-[850px] space-x-4 p-4 max-h-[250px] h-[250px]">
         <div class="carousel-item">
           <img
             src="/carousel/icons8-svelte-240.png"
