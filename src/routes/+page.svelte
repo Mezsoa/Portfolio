@@ -94,7 +94,7 @@
 			<div class="group relative overflow-hidden rounded-2xl transition-transform duration-300 hover:scale-105">
 				<div class="relative">
 					<img
-						src="https://shot.screenshotapi.net/v3/screenshot?token=273KNVX-HWA4NYD-MQT5CVN-W92CDEC&fresh=true&url=https%3A%2F%2Fcrewmate.se&output=image&file_type=png&wait_for_event=load	"
+						src="https://shot.screenshotapi.net/v3/screenshot?token=273KNVX-HWA4NYD-MQT5CVN-W92CDEC&fresh=true&url=https%3A%2F%2Fcrewmate.se&output=image&file_type=png&wait_for_event=load"
 						alt="Crewmate.se homepage"
 						class="h-48 sm:h-56 lg:h-64 w-full object-cover transition-transform duration-300 group-hover:scale-100"
 					/>
@@ -184,21 +184,22 @@
 	</div>
 </section>
 
-<!-- Certificate Section -->
-<section class="py-12 sm:py-16 lg:py-24 bg-base-200/50">
+<!-- Certificate & Reviews Section -->
+<section class="py-12 sm:py-16 lg:py-24 bg-transparent">
 	<div class="container mx-auto px-2 sm:px-4">
 		<div class="text-center mb-12">
-			<h2 class="text-3xl sm:text-4xl font-bold mb-4">Certifications</h2>
+			<h2 class="text-3xl sm:text-4xl font-bold mb-4">Certifications & Reviews</h2>
 			<p class="text-lg text-base-content/80 max-w-2xl mx-auto">
-				Continuous learning is key to staying ahead in tech. Here's my latest achievement.
+				Continuous learning and client satisfaction are key to staying ahead in tech.
 			</p>
 		</div>
 		
-		<div class="flex justify-center">
-			<div class="group relative max-w-4xl w-full">
-				<div class="relative overflow-hidden shadow-2xl">
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+			<!-- Certificate Section -->
+			<div class="group relative">
+				<div class="relative overflow-hidden shadow-2xl bg-transparent">
 					<!-- PDF Preview -->
-					<div class="w-full overflow-hidden" style="height: 1250px; background: transparent;">
+					<div class="w-full overflow-hidden" style="height: 1020px; background: transparent;">
 						<iframe
 							src="/certificate/CertificateOfCompletion_JohnGunnarsson.pdf#toolbar=0&navpanes=0&scrollbar=0&view=Fit"
 							class="w-full h-full border-0 bg-transparent"
@@ -211,7 +212,7 @@
 						<a
 							href="/certificate/CertificateOfCompletion_JohnGunnarsson.pdf"
 							download="John_Gunnarsson_Certificate.pdf"
-							class="btn btn-primary btn-lg shadow-xl hover:scale-105 transition-transform"
+							class="btn btn-primary btn-sm shadow-xl hover:scale-105 transition-transform m-4 bg-transparent"
 						>
 							<svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
@@ -240,6 +241,122 @@
 							</svg>
 							Completion Date
 						</span>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Reviews Carousel -->
+			<div class="flex flex-col justify-center items-center h-full min-h-[500px]">
+				<h3 class="text-xl font-bold mb-4 text-center tracking-tight">Client Reviews</h3>
+				<div class="carousel carousel-vertical w-full max-w-sm h-[700px]">
+					<div class="carousel-item h-full flex flex-col justify-center items-center">
+						<div class="w-full bg-transparent border-none rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
+							<div class="avatar mb-2">
+								<div class="w-14 h-14 rounded-full border border-base-300 flex items-center justify-center bg-base-100">
+									<span class="text-xl font-bold text-primary">DM</span>
+								</div>
+							</div>
+							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"John is incredibly reliable and delivers exactly what you need. His attention to detail and clean code made our collaboration seamless."</blockquote>
+							<div class="flex flex-col items-center gap-0.5 mt-2">
+								<span class="text-base font-semibold text-base-content/80">Donnie Mastromonaco</span>
+								<span class="text-xs text-base-content/60">Designer, SnrgyStudios</span>
+								<div class="flex gap-0.5 mt-1">
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="carousel-item h-full flex flex-col justify-center items-center">
+						<div class="w-full bg-transparent border border-base-200 rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
+							<div class="avatar mb-2">
+								<div class="w-14 h-14 rounded-full border border-base-300 flex items-center justify-center bg-base-100">
+									<span class="text-xl font-bold text-secondary">HL</span>
+								</div>
+							</div>
+							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"Working with John was a pleasure. He understands design intent and translates it perfectly into functional code."</blockquote>
+							<div class="flex flex-col items-center gap-0.5 mt-2">
+								<span class="text-base font-semibold text-base-content/80">Hannes Lövbacka</span>
+								<span class="text-xs text-base-content/60">Designer, SnrgyStudios</span>
+								<div class="flex gap-0.5 mt-1">
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="carousel-item h-full flex flex-col justify-center items-center">
+						<div class="w-full bg-transparent border border-base-200 rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
+							<div class="avatar mb-2">
+								<div class="w-14 h-14 rounded-full border border-base-300 flex items-center justify-center bg-base-100">
+									<span class="text-xl font-bold text-accent">NM</span>
+								</div>
+							</div>
+							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"John's A/B testing implementation helped us optimize our conversion rates significantly. His data-driven approach was invaluable."</blockquote>
+							<div class="flex flex-col items-center gap-0.5 mt-2">
+								<span class="text-base font-semibold text-base-content/80">Noora Team</span>
+								<span class="text-xs text-base-content/60">Product Launch</span>
+								<div class="flex gap-0.5 mt-1">
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="carousel-item h-full flex flex-col justify-center items-center">
+						<div class="w-full bg-transparent border border-base-200 rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
+							<div class="avatar mb-2">
+								<div class="w-14 h-14 rounded-full border border-base-300 flex items-center justify-center bg-base-100">
+									<span class="text-xl font-bold text-primary">CS</span>
+								</div>
+							</div>
+							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"The crew management system John built for us has streamlined our entire operation. It's intuitive and reliable."</blockquote>
+							<div class="flex flex-col items-center gap-0.5 mt-2">
+								<span class="text-base font-semibold text-base-content/80">Crewmate.se Client</span>
+								<span class="text-xs text-base-content/60">Crew Management</span>
+								<div class="flex gap-0.5 mt-1">
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="carousel-item h-full flex flex-col justify-center items-center">
+						<div class="w-full bg-transparent border border-base-200 rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
+							<div class="avatar mb-2">
+								<div class="w-14 h-14 rounded-full border border-base-300 flex items-center justify-center bg-base-100">
+									<span class="text-xl font-bold text-secondary">GM</span>
+								</div>
+							</div>
+							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"John's maintenance and improvements to our e-commerce platform have been excellent. He's responsive and always delivers quality work."</blockquote>
+							<div class="flex flex-col items-center gap-0.5 mt-2">
+								<span class="text-base font-semibold text-base-content/80">Glorb.me Owner</span>
+								<span class="text-xs text-base-content/60">E-commerce</span>
+								<div class="flex gap-0.5 mt-1">
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+									<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
