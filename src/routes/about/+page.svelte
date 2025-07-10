@@ -1,11 +1,11 @@
 <script lang="js">
 	import PhotoDeck from '$lib/components/PhotoDeck.svelte';
 
-	/** @type {{name: string, level: 'beginner' | 'intermediate' | 'advanced' | 'expert', tooltip: string, children?: any[], projects?: string[], x: number, y: number, unlocked?: boolean}[]} */
+	/** @type {{name: string, level: 'beginner' | 'intermediate' | 'advanced' | 'expert' | 'profile' | 'catergories', tooltip: string, children?: any[], projects?: string[], x: number, y: number, unlocked?: boolean}[]} */
 	let skillTree = [
 		{
 			name: 'John Gunnarsson',
-			level: 'intermediate',
+			level: 'profile',
 			tooltip: 'Full Stack Developer & Outdoor Enthusiast',
 			x: 50, // Center position (%)
 			y: 15,
@@ -13,7 +13,7 @@
 			children: [
 				{
 					name: 'Frontend',
-					level: 'intermediate',
+					level: 'catergories',
 					tooltip: 'User Interface & Experience Development',
 					x: 15,
 					y: 35,
@@ -29,7 +29,7 @@
 				},
 				{
 					name: 'Backend',
-					level: 'intermediate',
+					level: 'catergories',
 					tooltip: 'Server-side Architecture & APIs',
 					x: 85,
 					y: 35,
@@ -45,7 +45,7 @@
 				},
 				{
 					name: 'DevOps',
-					level: 'implemented in projects',
+					level: 'catergories',
 					tooltip: 'Deployment & Cloud Infrastructure',
 					x: 50,
 					y: 50,
@@ -60,7 +60,7 @@
 				},
 				{
 					name: 'Design',
-					level: 'advanced',
+					level: 'catergories',
 					tooltip: 'UI/UX & Visual Design',
 					x: 1,
 					y: 21,
@@ -74,7 +74,7 @@
 				},
 				{
 					name: 'Tools',
-					level: 'expert',
+					level: 'catergories',
 					tooltip: 'Development Workflow & Productivity',
 					x: 105,
 					y: 25,
@@ -140,6 +140,7 @@
 	function getSkillIcon(skillName) {
 		// @ts-ignore
 		const iconMap = {
+			'John Gunnarsson': '/images/john.png',
 			'HTML': '/carousel/icons8-html-240.png',
 			'CSS': '/carousel/icons8-css-240.png',
 			'JavaScript': '/carousel/icons8-javascript-240.png',
@@ -157,28 +158,32 @@
 			'Spring Boot': '/carousel/icons8-spring-boot-240.png',
 			'Vue.js': '/carousel/icons8-vue-js-256.png',
 			'Shopify': '/carousel/icons8-shopify-240.png',
-			'UI/UX': '/carousel/fullCircle.png',
-			'Responsive': '/carousel/responsive.png',
+			'UI/UX': '/carousel/fullCircle.webp',
+			'Responsive': '/carousel/responsive.webp',
 			'Prototyping': '/carousel/prototyping.webp',
 			'Docker': '/carousel/Docker.webp',
 			'AWS': '/carousel/aws.webp',
 			'Vercel': '/carousel/vercel.webp',
-			'frontend': '/carousel/frontend.webp',
-			'backend': '/carousel/backend.webp',
-			'devops': '/carousel/devops.webp',
-			'design': '/carousel/design.webp',
+			'Frontend': '/carousel/frontend.webp',
+			'Backend': '/carousel/backend.webp',
+			'DevOps': '/carousel/devops1.webp',
+			'Design': '/carousel/Design1.webp',
 			'tools': '/carousel/tools.webp',
 			'CI/CD': '/carousel/ci-cd.webp',
 			'Vite': '/carousel/vite.webp',
 			'VS Code': '/carousel/vscode.webp',
-			'Terminal': '/carousel/terminal.webp'
+			'Terminal': '/carousel/terminal.webp',
+			'APIs': '/carousel/API.webp',
+			'Express': '/carousel/express.webp',
+			'Tools': '/carousel/Tools.webp',
+			'VS Code': '/carousel/vs-code.webp',
 		};
 		
 		return iconMap[skillName] || null;
 	}
 
 	/**
-	 * @param {'beginner' | 'looking into it' | 'learning'  | 'implemented in projects' | 'intermediate' | 'advanced' | 'expert'} level
+	 * @param {'beginner' | 'looking into it' | 'learning'  | 'implemented in projects' | 'intermediate' | 'advanced' | 'expert' | 'profile' | 'catergories'} level
 	 */
 	function getLevelColor(level) {
 		switch (level) {
@@ -189,22 +194,26 @@
 			case 'intermediate': return '#3b82f6'; // blue-500
 			case 'advanced': return '#8b5cf6'; // purple-500
 			case 'expert': return '#10b981'; // green-500
+			case 'profile': return '#000000'; // black-500
+			case 'catergories': return '#000000'; // black-500
 			default: return '#6b7280'; // gray-500
 		}
 	}
 
 	/**
-	 * @param {'beginner' | 'looking into it' | 'learning'  | 'implemented in projects' | 'intermediate' | 'advanced' | 'expert'} level
+	 * @param {'beginner' | 'looking into it' | 'learning'  | 'implemented in projects' | 'intermediate' | 'advanced' | 'expert' | 'profile' | 'catergories'} level
 	 */
 	function getNodeSize(level) {
 		switch (level) {
 			case 'beginner': return 1.5;
-			case 'looking into it': return 1.8;
-			case 'learning': return 2.2;
-			case 'implemented in projects': return 2.5;
+			case 'looking into it': return 2.2;
+			case 'learning': return 2.5;
+			case 'implemented in projects': return 3.2;
 			case 'intermediate': return 3.2;
-			case 'advanced': return 3.8;
-			case 'expert': return 4.5;
+			case 'advanced': return 3.5;
+			case 'expert': return 3.5;
+			case 'profile': return 8;
+			case 'catergories': return 5.5;
 			default: return 1.5;
 		}
 	}
