@@ -20,12 +20,12 @@
 				{name}
 			</h1>
 			<p class="py-4 sm:py-6 text-sm sm:text-base leading-relaxed">
-				Hey, I'm John. I build fullstack web apps that just work — no fuss, no fluff.
+				John here — fullstack dev by day, bug hunter by night.
 				<br class="hidden sm:block" />
-				I care about clean code, smart solutions, and making your ideas come to life.
+				I turn ideas into slick, functional web apps with clean code and a focus on what matters.
 				<br class="hidden sm:block" />
 				<br class="hidden sm:block" />
-				If you want someone who's easy to work with and gets the job done, you're in the right place.
+				Let's make something great. Or at least something that doesn't break on launch.
 			</p>
 			<p class="text-xs sm:text-sm mt-2 sm:mt-4 font-poppins mb-8 sm:mb-16 px-2">"Powered by Freyk &mdash; Nordic precision, global impact"</p>
 			<div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center">
@@ -94,7 +94,7 @@
 			<div class="group relative overflow-hidden rounded-2xl transition-transform duration-300 hover:scale-105">
 				<div class="relative">
 					<img
-						src="https://shot.screenshotapi.net/v3/screenshot?token=273KNVX-HWA4NYD-MQT5CVN-W92CDEC&fresh=true&url=https%3A%2F%2Fcrewmate.se&output=image&file_type=png&wait_for_event=load"
+						src="/project/crewmate.webp"
 						alt="Crewmate.se homepage"
 						class="h-48 sm:h-56 lg:h-64 w-full object-cover transition-transform duration-300 group-hover:scale-100"
 					/>
@@ -121,7 +121,7 @@
 			<div class="group relative overflow-hidden rounded-2xl transition-transform duration-300 hover:scale-105">
 				<div class="relative">
 					<img
-						src="https://shot.screenshotapi.net/v3/screenshot?token=273KNVX-HWA4NYD-MQT5CVN-W92CDEC&fresh=true&url=https%3A%2F%2Fwww.noora.design&output=image&file_type=png&wait_for_event=load"
+						src="https://image.thum.io/get/https://www.noora.design"
 						alt="Noora.design homepage"
 						class="h-48 sm:h-56 lg:h-64 w-full object-cover transition-transform duration-300 group-hover:scale-100"
 					/>
@@ -158,7 +158,7 @@
 			<div class="group relative overflow-hidden rounded-2xl transition-transform duration-300 hover:scale-105">
 				<div class="relative">
 					<img
-						src="https://shot.screenshotapi.net/v3/screenshot?token=273KNVX-HWA4NYD-MQT5CVN-W92CDEC&fresh=true&url=https%3A%2F%2Fwww.glorb.me&output=image&file_type=png&wait_for_event=load"
+						src="https://image.thum.io/get/https://www.glorb.me"
 						alt="Glorb.me e-commerce homepage"
 						class="h-48 sm:h-56 lg:h-64 w-full object-cover transition-transform duration-300 group-hover:scale-100"
 					/>
