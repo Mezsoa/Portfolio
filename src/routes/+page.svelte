@@ -269,7 +269,7 @@
 									<img src="/Collabs/Donnie.webp" alt="Donnie Mastromonaco" class="w-full h-full object-cover rounded-full">
 								</div>
 							</div>
-							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"Hannes Review"</blockquote>
+							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"Donnie Review"</blockquote>
 							<div class="flex flex-col items-center gap-0.5 mt-2">
 								<span class="text-base font-semibold text-base-content/80">Donnie Mastromonaco</span>
 								<span class="text-xs text-base-content/60">Designer, SnrgyStudios</span>
@@ -291,7 +291,7 @@
 									<img src="/Collabs/Hannes.webp" alt="Hannes Lövbacka" class="w-full h-full object-cover rounded-full">
 								</div>
 							</div>
-							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"Donnie Review"</blockquote>
+							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"Hannes Review"</blockquote>
 							<div class="flex flex-col items-center gap-0.5 mt-2">
 								<span class="text-base font-semibold text-base-content/80">Hannes Lövbacka</span>
 								<span class="text-xs text-base-content/60">Designer, SnrgyStudios</span>
