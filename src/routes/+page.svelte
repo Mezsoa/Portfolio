@@ -312,289 +312,219 @@
 				</div>
 			</div>
 
-			<!-- Reviews Carousel -->
-			<div class="flex h-full min-h-[500px] flex-col items-center justify-center">
+			<!-- Premium Auto-Scroll Reviews Carousel -->
+			<div class="flex h-full min-h-[500px] flex-col items-center justify-start">
+				<div class="mb-8 text-center">
+					<h3 class="text-2xl font-bold tracking-tight text-white mb-4">
+						Client Reviews
+					</h3>
+					<div class="h-px w-16 bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto mb-4"></div>
+					<p class="text-white/70 text-sm max-w-sm mx-auto">
+						Trusted by designers, entrepreneurs, and creative professionals
+					</p>
+				</div>
 				
-				<h3 class="mb-4 text-center text-xl font-bold tracking-tight">Client Reviews</h3>
-				<p class="mb-4 text-[10px] text-white/80">Scroll up & down</p>
+				<div class="relative w-full max-w-md mt-4">
+					<!-- Glassmorphism container -->
+					<div class="relative h-[750px] w-full overflow-hidden rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-xl">
+						<!-- Gradient overlays -->
+						<div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/20 pointer-events-none z-10"></div>
+						
+						<!-- Auto-scrolling content -->
+						<div class="reviews-container h-full w-full overflow-hidden">
+							<div class="reviews-track animate-scroll-up">
+								<!-- Review Item 1 -->
+								<div class="review-item flex min-h-[200px] w-full flex-col items-center justify-center p-6">
+									<div class="flex w-full flex-col items-center gap-4">
+										<div class="avatar">
+											<div class="flex h-16 w-16 items-center justify-center rounded-full ring-2 ring-white/20 shadow-lg">
+												<img
+													src="/Collabs/Donnie.webp"
+													alt="Donnie Mastromonaco"
+													class="h-full w-full rounded-full object-cover"
+												/>
+											</div>
+										</div>
+										<blockquote class="text-center text-sm font-medium italic leading-relaxed text-white/90 max-w-sm">
+											"John is incredibly reliable and delivers exactly what you need. His attention to detail and clean code made our collaboration seamless."
+										</blockquote>
+										<div class="flex flex-col items-center gap-2">
+											<span class="text-white font-semibold text-sm">Donnie Mastromonaco</span>
+											<span class="text-white/60 text-xs">Designer, SnrgyStudios</span>
+											<div class="flex gap-1">
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
 
-				<div class="relative w-full max-w-sm">
-					<!-- Scroll indicator -->
-					<div
-						class="absolute top-[100px] -right-8 z-10 flex -translate-y-1/2 transform flex-col items-center gap-1"
-					>
-						<div class="bg-base-content/40 h-2 w-2 animate-pulse rounded-full"></div>
-						<div
-							class="bg-base-content/60 h-2 w-2 animate-pulse rounded-full"
-							style="animation-delay: 0.2s;"
-						></div>
-						<div
-							class="bg-base-content/80 h-2 w-2 animate-pulse rounded-full"
-							style="animation-delay: 0.4s;"
-						></div>
-						<div
-							class="bg-base-content/40 h-2 w-2 animate-pulse rounded-full"
-							style="animation-delay: 0.6s;"
-						></div>
-						<div
-							class="bg-base-content/60 h-2 w-2 animate-pulse rounded-full"
-							style="animation-delay: 0.8s;"
-						></div>
-					</div>
+								<!-- Review Item 2 -->
+								<div class="review-item flex min-h-[200px] w-full flex-col items-center justify-center p-6">
+									<div class="flex w-full flex-col items-center gap-4">
+										<div class="avatar">
+											<div class="flex h-16 w-16 items-center justify-center rounded-full ring-2 ring-white/20 shadow-lg">
+												<img
+													src="/Collabs/Hannes.webp"
+													alt="Hannes Lövbacka"
+													class="h-full w-full rounded-full object-cover"
+												/>
+											</div>
+										</div>
+										<blockquote class="text-center text-sm font-medium italic leading-relaxed text-white/90 max-w-sm">
+											"Working with John was a pleasure. He understands design intent and translates it perfectly into functional code."
+										</blockquote>
+										<div class="flex flex-col items-center gap-2">
+											<span class="text-white font-semibold text-sm">Hannes Lövbacka</span>
+											<span class="text-white/60 text-xs">Designer, SnrgyStudios</span>
+											<div class="flex gap-1">
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
 
-					<div
-						class="carousel carousel-vertical border-base-content/20 mb-46 h-[400px] w-full rounded-br-[60%] rounded-tl-[60%] border-t-2 border-b-2 backdrop-blur-[5px] bg-black/50 rotate-"
-					>
-						<div class="carousel-item flex h-full flex-col items-center justify-center">
-							<div class="flex w-full flex-col items-center gap-4 rounded-xl p-8 shadow-none">
-								<div class="avatar mb-2">
-									<div class="flex h-14 w-14 items-center justify-center rounded-full">
-										<img
-											src="/Collabs/Donnie.webp"
-											alt="Donnie Mastromonaco"
-											class="h-full w-full rounded-full object-cover"
-										/>
+								<!-- Review Item 3 -->
+								<div class="review-item flex min-h-[200px] w-full flex-col items-center justify-center p-6">
+									<div class="flex w-full flex-col items-center gap-4">
+										<div class="avatar">
+											<div class="flex h-16 w-16 items-center justify-center rounded-full ring-2 ring-white/20 shadow-lg">
+												<img
+													src="/Collabs/Noora.webp"
+													alt="Noora Team"
+													class="h-full w-full rounded-full object-cover"
+												/>
+											</div>
+										</div>
+										<blockquote class="text-center text-sm font-medium italic leading-relaxed text-white/90 max-w-sm">
+											"John helped us set up A/B testing for our product launch. He was patient with our questions and delivered exactly what we needed."
+										</blockquote>
+										<div class="flex flex-col items-center gap-2">
+											<span class="text-white font-semibold text-sm">Noora Team</span>
+											<span class="text-white/60 text-xs">Product Launch</span>
+											<div class="flex gap-1">
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+											</div>
+										</div>
 									</div>
 								</div>
-								<blockquote class="text-base-content/90 text-center text-lg font-medium italic">
-									"Donnie Review"
-								</blockquote>
-								<div class="mt-2 flex flex-col items-center gap-0.5">
-									<span class="text-base-content/80 text-base font-semibold"
-										>Donnie Mastromonaco</span
-									>
-									<span class="text-base-content/60 text-xs">Designer, SnrgyStudios</span>
-									<div class="mt-1 flex gap-0.5">
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-									</div>
-								</div>
-							</div>
-						</div>
 
-						<div class="carousel-item flex h-full flex-col items-center justify-center">
-							<div
-								class="flex w-full flex-col items-center gap-4 rounded-xl bg-transparent p-8 shadow-none"
-							>
-								<div class="avatar mb-2">
-									<div class="flex h-14 w-14 items-center justify-center rounded-full">
-										<img
-											src="/Collabs/Hannes.webp"
-											alt="Hannes Lövbacka"
-											class="h-full w-full rounded-full object-cover"
-										/>
+								<!-- Review Item 4 -->
+								<div class="review-item flex min-h-[200px] w-full flex-col items-center justify-center p-6">
+									<div class="flex w-full flex-col items-center gap-4">
+										<div class="avatar">
+											<div class="flex h-16 w-16 items-center justify-center rounded-full ring-2 ring-white/20 shadow-lg">
+												<img
+													src="/Collabs/crewmate1.webp"
+													alt="Crewmate.se Client"
+													class="h-full w-full rounded-full object-cover"
+												/>
+											</div>
+										</div>
+										<blockquote class="text-center text-sm font-medium italic leading-relaxed text-white/90 max-w-sm">
+											"John built our crew management system and it's working well for us. He understood my needs and delivered a solid solution."
+										</blockquote>
+										<div class="flex flex-col items-center gap-2">
+											<span class="text-white font-semibold text-sm">Crewmate.se Client</span>
+											<span class="text-white/60 text-xs">Crew Management</span>
+											<div class="flex gap-1">
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+											</div>
+										</div>
 									</div>
 								</div>
-								<blockquote class="text-base-content/90 text-center text-lg font-medium italic">
-									"Hannes Review"
-								</blockquote>
-								<div class="mt-2 flex flex-col items-center gap-0.5">
-									<span class="text-base-content/80 text-base font-semibold">Hannes Lövbacka</span>
-									<span class="text-base-content/60 text-xs">Designer, SnrgyStudios</span>
-									<div class="mt-1 flex gap-0.5">
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-									</div>
-								</div>
-							</div>
-						</div>
 
-						<div class="carousel-item flex h-full flex-col items-center justify-center">
-							<div
-								class="flex w-full flex-col items-center gap-4 rounded-xl bg-transparent p-8 shadow-none"
-							>
-								<div class="avatar mb-2">
-									<div class="flex h-14 w-14 items-center justify-center rounded-full">
-										<img
-											src="/Collabs/Noora.webp"
-											alt="Noora Team"
-											class="h-full w-full rounded-full object-cover"
-										/>
-									</div>
-								</div>
-								<blockquote class="text-base-content/90 text-center text-lg font-medium italic">
-									"John's A/B testing implementation helped us optimize our conversion rates
-									significantly. His data-driven approach was invaluable."
-								</blockquote>
-								<div class="mt-2 flex flex-col items-center gap-0.5">
-									<span class="text-base-content/80 text-base font-semibold">Noora Team</span>
-									<span class="text-base-content/60 text-xs">Product Launch</span>
-									<div class="mt-1 flex gap-0.5">
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="carousel-item flex h-full flex-col items-center justify-center">
-							<div
-								class="flex w-full flex-col items-center gap-4 rounded-xl bg-transparent p-8 shadow-none"
-							>
-								<div class="avatar mb-2">
-									<div class="flex h-16 w-16 items-center justify-center rounded-full">
-										<img
-											src="/Collabs/crewmate1.webp"
-											alt="Crewmate.se Client"
-											class="h-full w-full rounded-full object-cover"
-										/>
-									</div>
-								</div>
-								<blockquote class="text-base-content/90 text-center text-lg font-medium italic">
-									"The crew management system John built for us has streamlined our entire
-									operation. It's intuitive and reliable."
-								</blockquote>
-								<div class="mt-2 flex flex-col items-center gap-0.5">
-									<span class="text-base-content/80 text-base font-semibold"
-										>Crewmate.se Client</span
-									>
-									<span class="text-base-content/60 text-xs">Crew Management</span>
-									<div class="mt-1 flex gap-0.5">
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="carousel-item flex h-full flex-col items-center justify-center">
-							<div
-								class="flex w-full flex-col items-center gap-4 rounded-xl bg-transparent p-8 shadow-none"
-							>
-								<div class="avatar mb-2">
-									<div class="flex h-14 w-14 items-center justify-center rounded-full">
-										<img
-											src="/Collabs/Glorb.webp"
-											alt="Glorb.me Owner"
-											class="h-full w-full rounded-full object-cover"
-										/>
-									</div>
-								</div>
-								<blockquote class="text-base-content/90 text-center text-lg font-medium italic">
-									"John's maintenance and improvements to our e-commerce platform have been
-									excellent. He's responsive and always delivers quality work."
-								</blockquote>
-								<div class="mt-2 flex flex-col items-center gap-0.5">
-									<span class="text-base-content/80 text-base font-semibold">Glorb.me Owner</span>
-									<span class="text-base-content/60 text-xs">E-commerce</span>
-									<div class="mt-1 flex gap-0.5">
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
-										<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-											><path
-												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"
-											/></svg
-										>
+								<!-- Review Item 5 -->
+								<div class="review-item flex min-h-[200px] w-full flex-col items-center justify-center p-6">
+									<div class="flex w-full flex-col items-center gap-4">
+										<div class="avatar">
+											<div class="flex h-16 w-16 items-center justify-center rounded-full ring-2 ring-white/20 shadow-lg">
+												<img
+													src="/Collabs/Glorb.webp"
+													alt="Glorb.me Owner"
+													class="h-full w-full rounded-full object-cover"
+												/>
+											</div>
+										</div>
+										<blockquote class="text-center text-sm font-medium italic leading-relaxed text-white/90 max-w-sm">
+											"John has been helping us maintain our e-commerce site. He's reliable and gets things done when we need updates."
+										</blockquote>
+										<div class="flex flex-col items-center gap-2">
+											<span class="text-white font-semibold text-sm">Glorb.me Owner</span>
+											<span class="text-white/60 text-xs">E-commerce</span>
+											<div class="flex gap-1">
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+												<svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+													<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z"/>
+												</svg>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -605,3 +535,39 @@
 		</div>
 	</div>
 </section>
+
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+	
+	:global(html) {
+		font-family: 'Poppins', sans-serif;
+	}
+
+	/* Auto-scroll animation for reviews */
+	@keyframes scroll-up {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(-1000px);
+		}
+	}
+
+	.animate-scroll-up {
+		animation: scroll-up 40s linear infinite;
+	}
+
+	.reviews-container:hover .animate-scroll-up {
+		animation-play-state: paused;
+	}
+
+	/* Review item transitions */
+	.review-item {
+		transition: all 0.3s ease;
+	}
+
+	.review-item:hover {
+		transform: translateY(-4px);
+	}
+</style>
