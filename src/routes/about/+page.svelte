@@ -19,12 +19,12 @@
 					y: 35,
 					unlocked: true,
 					children: [
-						{ name: 'HTML', level: 'intermediate', tooltip: 'Semantic markup and accessibility', x: 8, y: 55, unlocked: true },
-						{ name: 'CSS', level: 'intermediate', tooltip: 'Modern styling and animations', x: 12, y: 65, unlocked: true },
-						{ name: 'JavaScript', level: 'intermediate', tooltip: 'Interactive functionality and ES6+', x: 18, y: 60, unlocked: true },
-						{ name: 'Svelte', level: 'intermediate', tooltip: 'Reactive UI framework', x: 22, y: 50, unlocked: true },
+						{ name: 'HTML', level: 'intermediate', tooltip: 'Semantic markup and accessibility', x: -5, y: 55, unlocked: true },
+						{ name: 'CSS', level: 'intermediate', tooltip: 'Modern styling and animations', x: -10, y: 75, unlocked: true },
+						{ name: 'JavaScript', level: 'intermediate', tooltip: 'Interactive functionality and ES6+', x:8, y: 60, unlocked: true },
+						{ name: 'Svelte', level: 'intermediate', tooltip: 'Reactive UI framework', x: 30, y: 50, unlocked: true },
 						{ name: 'React', level: 'intermediate', tooltip: 'Component-based architecture', x: 15, y: 75, unlocked: true },
-						{ name: 'Tailwind', level: 'intermediate', tooltip: 'Utility-first CSS framework', x: 25, y: 70, unlocked: true }
+						{ name: 'Tailwind', level: 'intermediate', tooltip: 'Utility-first CSS framework', x: 25, y: 60, unlocked: true }
 					]
 				},
 				{
@@ -35,12 +35,14 @@
 					y: 35,
 					unlocked: true,
 					children: [
-						{ name: 'Node.js', level: 'intermediate', tooltip: 'JavaScript runtime environment', x: 78, y: 55, unlocked: true },
-						{ name: 'Express', level: 'intermediate', tooltip: 'Fast web framework', x: 88, y: 60, unlocked: true },
-						{ name: 'APIs', level: 'intermediate', tooltip: 'RESTful and GraphQL services', x: 92, y: 50, unlocked: true },
-						{ name: 'MongoDB', level: 'intermediate', tooltip: 'Document-based NoSQL database', x: 82, y: 70, unlocked: true },
-						{ name: 'PostgreSQL', level: 'intermediate', tooltip: 'Relational database management', x: 75, y: 65, unlocked: true },
-						{ name: 'Supabase', level: 'intermediate', tooltip: 'Open-source Firebase alternative', x: 85, y: 75, unlocked: true }
+						{ name: 'Node.js', level: 'intermediate', tooltip: 'JavaScript runtime environment', x: 68, y: 45, unlocked: true },
+						{ name: 'Express', level: 'intermediate', tooltip: 'Fast web framework', x: 88, y: 90, unlocked: true },
+						{ name: 'APIs', level: 'intermediate', tooltip: 'RESTful and GraphQL services', x: 102, y: 70, unlocked: true },
+						{ name: 'MongoDB', level: 'intermediate', tooltip: 'Document-based NoSQL database', x: 72, y: 70, unlocked: true },
+						{ name: 'PostgreSQL', level: 'intermediate', tooltip: 'Relational database management', x: 65, y: 65, unlocked: true },
+						{ name: 'Supabase', level: 'intermediate', tooltip: 'Open-source Firebase alternative', x: 82, y: 55, unlocked: true },
+						{ name: 'Spring Boot', level: 'intermediate', tooltip: 'Java framework for building web applications', x: 95, y: 80, unlocked: true },
+						{ name: 'Java', level: 'intermediate', tooltip: 'Object-oriented programming language', x: 110, y: 65, unlocked: true }
 					]
 				},
 				{
@@ -83,7 +85,8 @@
 						{ name: 'GitHub', level: 'expert', tooltip: 'Code collaboration platform', x: 108, y: 50, unlocked: true },
 						{ name: 'Vite', level: 'advanced', tooltip: 'Fast build tool', x: 118, y: 45, unlocked: true },
 						{ name: 'VS Code', level: 'expert', tooltip: 'Code editor and extensions', x: 95, y: 35, unlocked: true },
-						{ name: 'Terminal', level: 'advanced', tooltip: 'Command line proficiency', x: 130, y: 42, unlocked: true }
+						{ name: 'Terminal', level: 'advanced', tooltip: 'Command line proficiency', x: 130, y: 42, unlocked: true },
+						{ name: 'IntelliJ', level: 'intermediate', tooltip: 'Java IDE for building web applications', x: 105, y: 40, unlocked: true },
 					]
 				}
 			]
@@ -171,12 +174,12 @@
 			'tools': '/carousel/tools.webp',
 			'CI/CD': '/carousel/ci-cd.webp',
 			'Vite': '/carousel/vite.webp',
-			'VS Code': '/carousel/vscode.webp',
+			'VS Code': '/carousel/vs-code.webp',
 			'Terminal': '/carousel/terminal.webp',
 			'APIs': '/carousel/API.webp',
 			'Express': '/carousel/express.webp',
 			'Tools': '/carousel/Tools.webp',
-			'VS Code': '/carousel/vs-code.webp',
+			'IntelliJ': '/carousel/intellij.webp'
 		};
 		
 		return iconMap[skillName] || null;
