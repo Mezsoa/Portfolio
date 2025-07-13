@@ -261,7 +261,7 @@
 						<div class="w-2 h-2 bg-base-content/60 rounded-full animate-pulse" style="animation-delay: 0.8s;"></div>
 					</div>
 					
-					<div class="carousel carousel-vertical w-full h-[500px] mb-46 rounded-[100%] border-t-2 border-b-2 border-base-content/20">
+					<div class="carousel carousel-vertical w-full h-[500px] mb-46 rounded-[10%] border-t-2 border-b-2 border-base-content/10 backdrop-blur-[2px]">
 					<div class="carousel-item h-full flex flex-col justify-center items-center">
 						<div class="w-full bg-transparent rounded-xl p-8 flex flex-col items-center gap-4 shadow-none">
 							<div class="avatar mb-2">
@@ -269,7 +269,7 @@
 									<img src="/Collabs/Donnie.webp" alt="Donnie Mastromonaco" class="w-full h-full object-cover rounded-full">
 								</div>
 							</div>
-							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"John is incredibly reliable and delivers exactly what you need. His attention to detail and clean code made our collaboration seamless."</blockquote>
+							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"Hannes Review"</blockquote>
 							<div class="flex flex-col items-center gap-0.5 mt-2">
 								<span class="text-base font-semibold text-base-content/80">Donnie Mastromonaco</span>
 								<span class="text-xs text-base-content/60">Designer, SnrgyStudios</span>
@@ -291,7 +291,7 @@
 									<img src="/Collabs/Hannes.webp" alt="Hannes Lövbacka" class="w-full h-full object-cover rounded-full">
 								</div>
 							</div>
-							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"Working with John was a pleasure. He understands design intent and translates it perfectly into functional code."</blockquote>
+							<blockquote class="text-center text-lg italic text-base-content/90 font-medium">"Donnie Review"</blockquote>
 							<div class="flex flex-col items-center gap-0.5 mt-2">
 								<span class="text-base font-semibold text-base-content/80">Hannes Lövbacka</span>
 								<span class="text-xs text-base-content/60">Designer, SnrgyStudios</span>
