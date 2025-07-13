@@ -81,7 +81,7 @@
 	});
 </script>
 
-<div class="stats shadow h-[140px]">
+<div class="stats shadow h-[140px] w-[300px]">
 	<div class="stat">
 		
 		{#if loading}

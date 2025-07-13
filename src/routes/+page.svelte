@@ -314,11 +314,7 @@
 
 			<!-- Reviews Carousel -->
 			<div class="flex h-full min-h-[500px] flex-col items-center justify-center">
-				<p
-					class="text-base-content/80 font-poppins relative bottom-40 left-120 mx-auto max-w-[120px] text-[10px]"
-				>
-					Continuous learning and client satisfaction are key to staying ahead in tech.
-				</p>
+				
 				<h3 class="mb-4 text-center text-xl font-bold tracking-tight">Client Reviews</h3>
 				<p class="mb-4 text-[10px] text-white/80">Scroll up & down</p>
 
